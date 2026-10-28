@@ -1,0 +1,4913 @@
+<!doctype html>
+<html lang="uz" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <script>try { var t = localStorage.getItem('theme'); if (t) document.documentElement.dataset.theme = t; } catch (e) {}</script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Yakuniy test — Elementar dasturlash</title>
+  <meta name="description" content="Elementar dasturlash: elektron darslik. Muallif: Oydin Tashtemirova.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='-32 -32 64 64'%3E%3Crect x='-21' y='-21' width='42' height='42' fill='%230E7C7B'/%3E%3Crect x='-21' y='-21' width='42' height='42' fill='%230E7C7B' transform='rotate(45)'/%3E%3Ccircle r='9' fill='%23F4EBDD'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Nunito+Sans:opsz,wght@6..12,400;6..12,600;6..12,700;6..12,800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="static/lectures/css/style.css">
+  <link rel="stylesheet" href="static/lectures/css/scenes.css">
+  <link rel="stylesheet" href="static/lectures/css/sections.css">
+  
+</head>
+<body data-view="test" >
+  <div class="bg" aria-hidden="true"><div class="pattern"></div></div>
+  <div class="band" aria-hidden="true"></div>
+  <div class="progress" style="width:0%"></div>
+
+  <header class="topbar">
+    <a class="brand" href="index.html" title="Bosh sahifa">
+      <span class="brand-logo"><svg viewBox="-32 -32 64 64" width="42" height="42" aria-hidden="true"><g class="bl-star"><rect x="-21" y="-21" width="42" height="42"/><rect x="-21" y="-21" width="42" height="42" transform="rotate(45)"/></g><g class="bl-in"><rect x="-11" y="-11" width="22" height="22"/><rect x="-11" y="-11" width="22" height="22" transform="rotate(45)"/></g><circle r="4"/></svg></span>
+      <span class="brand-text"><b>Elementar dasturlash</b><small>Elektron darslik · 30 mavzu</small></span>
+    </a>
+    <nav class="crumbs"><a href="index.html">Bosh sahifa</a><i></i><span>Yakuniy test</span></nav>
+    <div class="top-actions">
+      <a class="icon-btn" href="#jumper" title="Mavzu qidirish"><svg class="ic" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg></a>
+      
+      <a class="icon-btn" href="#" data-theme-btn title="Yorug‘ / tungi rejim"><span class="th-moon"><svg class="ic" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 14.5A8 8 0 1 1 9.5 4a6.5 6.5 0 0 0 10.5 10.5Z"/></svg></span><span class="th-sun"><svg class="ic" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg></span></a>
+      
+    </div>
+  </header>
+
+  <main class="app">
+    
+    
+<section class="view final">
+  <div class="final-grid">
+    <div class="final-side">
+      <div class="eyebrow"><span class="dot"></span>Yakuniy nazorat</div>
+      <h1>Yakuniy test</h1>
+      <p class="muted">Barcha mavzular bo‘yicha 150 ta savoldan tasodifiy 20 tasi tanlanadi.
+        Har bir to‘g‘ri javob — 1 ball. 86% va undan yuqori — «5», 71% — «4», 56% — «3».</p>
+      <a class="btn ghost" href="test.html"><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 11a8 8 0 1 0-2.3 5.7"/><path d="M20 4v7h-7"/></svg> Yangi savollar</a>
+      <div id="sceneSlot"><div class="scene3d th-chip"><div class="floor"></div><div class="parts"><i class="" style="left:0%;animation-delay:0.0s;animation-duration:6s"></i><i class="" style="left:37%;animation-delay:0.7s;animation-duration:7s"></i><i class="" style="left:74%;animation-delay:1.4s;animation-duration:8s"></i><i class="" style="left:11%;animation-delay:2.1s;animation-duration:9s"></i><i class="" style="left:48%;animation-delay:2.8s;animation-duration:10s"></i><i class="" style="left:85%;animation-delay:3.5s;animation-duration:6s"></i><i class="" style="left:22%;animation-delay:4.2s;animation-duration:7s"></i><i class="" style="left:59%;animation-delay:4.9s;animation-duration:8s"></i><i class="" style="left:96%;animation-delay:5.6s;animation-duration:9s"></i><i class="" style="left:33%;animation-delay:0.3s;animation-duration:10s"></i><i class="" style="left:70%;animation-delay:1.0s;animation-duration:6s"></i><i class="" style="left:7%;animation-delay:1.7s;animation-duration:7s"></i><i class="" style="left:44%;animation-delay:2.4s;animation-duration:8s"></i><i class="" style="left:81%;animation-delay:3.1s;animation-duration:9s"></i></div><div class="o3 s-tilt"><div class="o3 s-stage"><div class="o3" style="transform:rotateX(58deg)"><div class="o3 spin"><div class="o3"><div class="o3 box pcb"><div class="f f-front" style="width:240px;height:240px;margin:-120.0px 0 0 -120.0px;transform:translateZ(6.0px)"><svg viewBox="0 0 240 240" width="100%" height="100%"><path class="trace" style="animation-delay:0.00s" d="M46 0V40M46 240V200M0 46H40M240 46H200"/><rect x="43" y="38" width="6" height="10" rx="1" fill="#C8952B"/><rect x="43" y="192" width="6" height="10" rx="1" fill="#C8952B"/><rect x="38" y="43" width="10" height="6" rx="1" fill="#C8952B"/><rect x="192" y="43" width="10" height="6" rx="1" fill="#C8952B"/><path class="trace" style="animation-delay:0.23s" d="M62 0V40M62 240V200M0 62H40M240 62H200"/><rect x="59" y="38" width="6" height="10" rx="1" fill="#C8952B"/><rect x="59" y="192" width="6" height="10" rx="1" fill="#C8952B"/><rect x="38" y="59" width="10" height="6" rx="1" fill="#C8952B"/><rect x="192" y="59" width="10" height="6" rx="1" fill="#C8952B"/><path class="trace" style="animation-delay:0.46s" d="M78 0V40M78 240V200M0 78H40M240 78H200"/><rect x="75" y="38" width="6" height="10" rx="1" fill="#C8952B"/><rect x="75" y="192" width="6" height="10" rx="1" fill="#C8952B"/><rect x="38" y="75" width="10" height="6" rx="1" fill="#C8952B"/><rect x="192" y="75" width="10" height="6" rx="1" fill="#C8952B"/><path class="trace" style="animation-delay:0.69s" d="M94 0V40M94 240V200M0 94H40M240 94H200"/><rect x="91" y="38" width="6" height="10" rx="1" fill="#C8952B"/><rect x="91" y="192" width="6" height="10" rx="1" fill="#C8952B"/><rect x="38" y="91" width="10" height="6" rx="1" fill="#C8952B"/><rect x="192" y="91" width="10" height="6" rx="1" fill="#C8952B"/><path class="trace" style="animation-delay:0.92s" d="M110 0V40M110 240V200M0 110H40M240 110H200"/><rect x="107" y="38" width="6" height="10" rx="1" fill="#C8952B"/><rect x="107" y="192" width="6" height="10" rx="1" fill="#C8952B"/><rect x="38" y="107" width="10" height="6" rx="1" fill="#C8952B"/><rect x="192" y="107" width="10" height="6" rx="1" fill="#C8952B"/><path class="trace" style="animation-delay:1.15s" d="M126 0V40M126 240V200M0 126H40M240 126H200"/><rect x="123" y="38" width="6" height="10" rx="1" fill="#C8952B"/><rect x="123" y="192" width="6" height="10" rx="1" fill="#C8952B"/><rect x="38" y="123" width="10" height="6" rx="1" fill="#C8952B"/><rect x="192" y="123" width="10" height="6" rx="1" fill="#C8952B"/><path class="trace" style="animation-delay:1.38s" d="M142 0V40M142 240V200M0 142H40M240 142H200"/><rect x="139" y="38" width="6" height="10" rx="1" fill="#C8952B"/><rect x="139" y="192" width="6" height="10" rx="1" fill="#C8952B"/><rect x="38" y="139" width="10" height="6" rx="1" fill="#C8952B"/><rect x="192" y="139" width="10" height="6" rx="1" fill="#C8952B"/><path class="trace" style="animation-delay:1.61s" d="M158 0V40M158 240V200M0 158H40M240 158H200"/><rect x="155" y="38" width="6" height="10" rx="1" fill="#C8952B"/><rect x="155" y="192" width="6" height="10" rx="1" fill="#C8952B"/><rect x="38" y="155" width="10" height="6" rx="1" fill="#C8952B"/><rect x="192" y="155" width="10" height="6" rx="1" fill="#C8952B"/><path class="trace" style="animation-delay:1.84s" d="M174 0V40M174 240V200M0 174H40M240 174H200"/><rect x="171" y="38" width="6" height="10" rx="1" fill="#C8952B"/><rect x="171" y="192" width="6" height="10" rx="1" fill="#C8952B"/><rect x="38" y="171" width="10" height="6" rx="1" fill="#C8952B"/><rect x="192" y="171" width="10" height="6" rx="1" fill="#C8952B"/></svg></div><div class="f f-back" style="width:240px;height:240px;margin:-120.0px 0 0 -120.0px;transform:rotateY(180deg) translateZ(6.0px)"></div><div class="f f-right" style="width:12px;height:240px;margin:-120.0px 0 0 -6.0px;transform:rotateY(90deg) translateZ(120.0px)"></div><div class="f f-left" style="width:12px;height:240px;margin:-120.0px 0 0 -6.0px;transform:rotateY(-90deg) translateZ(120.0px)"></div><div class="f f-top" style="width:240px;height:12px;margin:-6.0px 0 0 -120.0px;transform:rotateX(90deg) translateZ(120.0px)"></div><div class="f f-bottom" style="width:240px;height:12px;margin:-6.0px 0 0 -120.0px;transform:rotateX(-90deg) translateZ(120.0px)"></div></div><div class="o3 box chip-body" style="transform:translateZ(17px);"><div class="f f-front" style="width:140px;height:140px;margin:-70.0px 0 0 -70.0px;transform:translateZ(11.0px)"><div class="chip-label"><b>CPU</b><small>8 yadro · 4.6 GHz</small></div></div><div class="f f-back" style="width:140px;height:140px;margin:-70.0px 0 0 -70.0px;transform:rotateY(180deg) translateZ(11.0px)"></div><div class="f f-right" style="width:22px;height:140px;margin:-70.0px 0 0 -11.0px;transform:rotateY(90deg) translateZ(70.0px)"></div><div class="f f-left" style="width:22px;height:140px;margin:-70.0px 0 0 -11.0px;transform:rotateY(-90deg) translateZ(70.0px)"></div><div class="f f-top" style="width:140px;height:22px;margin:-11.0px 0 0 -70.0px;transform:rotateX(90deg) translateZ(70.0px)"></div><div class="f f-bottom" style="width:140px;height:22px;margin:-11.0px 0 0 -70.0px;transform:rotateX(-90deg) translateZ(70.0px)"></div></div><div class="o3 box chip-core" style="transform:translateZ(31px);"><div class="f f-front" style="width:64px;height:64px;margin:-32.0px 0 0 -32.0px;transform:translateZ(3.0px)"></div><div class="f f-back" style="width:64px;height:64px;margin:-32.0px 0 0 -32.0px;transform:rotateY(180deg) translateZ(3.0px)"></div><div class="f f-right" style="width:6px;height:64px;margin:-32.0px 0 0 -3.0px;transform:rotateY(90deg) translateZ(32.0px)"></div><div class="f f-left" style="width:6px;height:64px;margin:-32.0px 0 0 -3.0px;transform:rotateY(-90deg) translateZ(32.0px)"></div><div class="f f-top" style="width:64px;height:6px;margin:-3.0px 0 0 -32.0px;transform:rotateX(90deg) translateZ(32.0px)"></div><div class="f f-bottom" style="width:64px;height:6px;margin:-3.0px 0 0 -32.0px;transform:rotateX(-90deg) translateZ(32.0px)"></div></div><div class="o3 beams"><div class="o3" style="transform:translateZ(40px)"><i class="beam" style="left:-90px;top:-90px;animation-delay:0.0s"></i><i class="beam" style="left:-30px;top:-90px;animation-delay:0.4s"></i><i class="beam" style="left:30px;top:-90px;animation-delay:0.8s"></i><i class="beam" style="left:90px;top:-90px;animation-delay:1.2s"></i><i class="beam" style="left:-90px;top:60px;animation-delay:1.6s"></i><i class="beam" style="left:-30px;top:60px;animation-delay:2.0s"></i><i class="beam" style="left:30px;top:60px;animation-delay:2.4s"></i><i class="beam" style="left:90px;top:60px;animation-delay:2.8s"></i></div></div></div></div></div></div></div></div></div>
+    </div>
+    
+    
+    
+<form class="quiz glass rv" method="post" style="--d:0.14s" data-offline data-s="9cc1fc31" data-pick="20">
+  <input type="hidden" name="csrfmiddlewaretoken" value="6KgHDJmlc5DvMon9GmAFM1dnAqKjalCUVCfboSm8ycgcu9cOmPU25qpeQHJiF7vV">
+  <div class="quiz-head"><span>Yakuniy test</span><b data-count>20 ta savol</b></div>
+
+  
+
+  
+  <fieldset class="qblock " data-h="3aece392" data-topic="1">
+    <a class="quiz-topic" href="mavzu-1-0.html">1-mavzu: Dasturlash va algoritm tushunchalari</a>
+    <legend class="quiz-q"><span class="qn">1</span>«Algoritm» so‘zi qaysi olim nomi bilan bog‘liq?</legend>
+    <div class="opts">
+      
+      <label class="opt">
+        <input type="radio" name="q1" value="0" required
+                >
+        <i>A</i><span>Abu Ali ibn Sino</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q1" value="1" required
+                >
+        <i>B</i><span>Muhammad al-Xorazmiy</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q1" value="2" required
+                >
+        <i>C</i><span>Mirzo Ulug‘bek</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q1" value="3" required
+                >
+        <i>D</i><span>Abu Rayhon Beruniy</span>
+      </label>
+      
+    </div>
+  </fieldset>
+  
+  <fieldset class="qblock " data-h="1d5c44b9" data-topic="1">
+    <a class="quiz-topic" href="mavzu-1-0.html">1-mavzu: Dasturlash va algoritm tushunchalari</a>
+    <legend class="quiz-q"><span class="qn">2</span>Algoritm chekli qadamdan so‘ng natija berishi qaysi xossa?</legend>
+    <div class="opts">
+      
+      <label class="opt">
+        <input type="radio" name="q2" value="0" required
+                >
+        <i>A</i><span>Ommaviylik</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q2" value="1" required
+                >
+        <i>B</i><span>Diskretlik</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q2" value="2" required
+                >
+        <i>C</i><span>Tushunarlilik</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q2" value="3" required
+                >
+        <i>D</i><span>Natijaviylik</span>
+      </label>
+      
+    </div>
+  </fieldset>
+  
+  <fieldset class="qblock " data-h="90fe26ef" data-topic="1">
+    <a class="quiz-topic" href="mavzu-1-0.html">1-mavzu: Dasturlash va algoritm tushunchalari</a>
+    <legend class="quiz-q"><span class="qn">3</span>Python dasturi qanday bajariladi?</legend>
+    <div class="opts">
+      
+      <label class="opt">
+        <input type="radio" name="q3" value="0" required
+                >
+        <i>A</i><span>Interpretator orqali qatorma-qator</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q3" value="1" required
+                >
+        <i>B</i><span>Faqat mashina kodida yoziladi</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q3" value="2" required
+                >
+        <i>C</i><span>Faqat Assembler orqali</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q3" value="3" required
+                >
+        <i>D</i><span>Hech qanday dasturisiz</span>
+      </label>
+      
+    </div>
+  </fieldset>
+  
+  <fieldset class="qblock " data-h="99aedcb5" data-topic="1">
+    <a class="quiz-topic" href="mavzu-1-0.html">1-mavzu: Dasturlash va algoritm tushunchalari</a>
+    <legend class="quiz-q"><span class="qn">4</span>Quyidagilardan qaysi biri kompilyatsiya qilinadigan dasturlash tili?</legend>
+    <div class="opts">
+      
+      <label class="opt">
+        <input type="radio" name="q4" value="0" required
+                >
+        <i>A</i><span>Python</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q4" value="1" required
+                >
+        <i>B</i><span>C++</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q4" value="2" required
+                >
+        <i>C</i><span>JavaScript</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q4" value="3" required
+                >
+        <i>D</i><span>Bash</span>
+      </label>
+      
+    </div>
+  </fieldset>
+  
+  <fieldset class="qblock " data-h="7d798770" data-topic="1">
+    <a class="quiz-topic" href="mavzu-1-0.html">1-mavzu: Dasturlash va algoritm tushunchalari</a>
+    <legend class="quiz-q"><span class="qn">5</span>«Choyga biroz shakar sol» buyrug‘i algoritmning qaysi xossasini buzadi?</legend>
+    <div class="opts">
+      
+      <label class="opt">
+        <input type="radio" name="q5" value="0" required
+                >
+        <i>A</i><span>Diskretlik</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q5" value="1" required
+                >
+        <i>B</i><span>Ommaviylik</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q5" value="2" required
+                >
+        <i>C</i><span>Natijaviylik</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q5" value="3" required
+                >
+        <i>D</i><span>Aniqlik</span>
+      </label>
+      
+    </div>
+  </fieldset>
+  
+  <fieldset class="qblock " data-h="0110f57a" data-topic="2">
+    <a class="quiz-topic" href="mavzu-2-0.html">2-mavzu: Oddiy masalalar uchun algoritm tuzish asoslari</a>
+    <legend class="quiz-q"><span class="qn">6</span>Blok-sxemada ma’lumot kiritish va chiqarish qaysi shakl bilan tasvirlanadi?</legend>
+    <div class="opts">
+      
+      <label class="opt">
+        <input type="radio" name="q6" value="0" required
+                >
+        <i>A</i><span>Romb</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q6" value="1" required
+                >
+        <i>B</i><span>Oval</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q6" value="2" required
+                >
+        <i>C</i><span>Parallelogramm</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q6" value="3" required
+                >
+        <i>D</i><span>Doira</span>
+      </label>
+      
+    </div>
+  </fieldset>
+  
+  <fieldset class="qblock " data-h="d58acdf3" data-topic="2">
+    <a class="quiz-topic" href="mavzu-2-0.html">2-mavzu: Oddiy masalalar uchun algoritm tuzish asoslari</a>
+    <legend class="quiz-q"><span class="qn">7</span>Blok-sxemada shart qaysi shakl bilan ko‘rsatiladi?</legend>
+    <div class="opts">
+      
+      <label class="opt">
+        <input type="radio" name="q7" value="0" required
+                >
+        <i>A</i><span>Romb</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q7" value="1" required
+                >
+        <i>B</i><span>To‘g‘ri to‘rtburchak</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q7" value="2" required
+                >
+        <i>C</i><span>Parallelogramm</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q7" value="3" required
+                >
+        <i>D</i><span>Oval</span>
+      </label>
+      
+    </div>
+  </fieldset>
+  
+  <fieldset class="qblock " data-h="5c635983" data-topic="2">
+    <a class="quiz-topic" href="mavzu-2-0.html">2-mavzu: Oddiy masalalar uchun algoritm tuzish asoslari</a>
+    <legend class="quiz-q"><span class="qn">8</span>a = 5, b = 3 bo‘lsa, P = 2 · (a + b) nechaga teng?</legend>
+    <div class="opts">
+      
+      <label class="opt">
+        <input type="radio" name="q8" value="0" required
+                >
+        <i>A</i><span>15</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q8" value="1" required
+                >
+        <i>B</i><span>13</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q8" value="2" required
+                >
+        <i>C</i><span>11</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q8" value="3" required
+                >
+        <i>D</i><span>16</span>
+      </label>
+      
+    </div>
+  </fieldset>
+  
+  <fieldset class="qblock " data-h="61f106d7" data-topic="2">
+    <a class="quiz-topic" href="mavzu-2-0.html">2-mavzu: Oddiy masalalar uchun algoritm tuzish asoslari</a>
+    <legend class="quiz-q"><span class="qn">9</span>C = 100 bo‘lsa, F = C · 9 / 5 + 32 formulasi bo‘yicha F nechaga teng?</legend>
+    <div class="opts">
+      
+      <label class="opt">
+        <input type="radio" name="q9" value="0" required
+                >
+        <i>A</i><span>132</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q9" value="1" required
+                >
+        <i>B</i><span>180</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q9" value="2" required
+                >
+        <i>C</i><span>212</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q9" value="3" required
+                >
+        <i>D</i><span>200</span>
+      </label>
+      
+    </div>
+  </fieldset>
+  
+  <fieldset class="qblock " data-h="ed4e4c07" data-topic="2">
+    <a class="quiz-topic" href="mavzu-2-0.html">2-mavzu: Oddiy masalalar uchun algoritm tuzish asoslari</a>
+    <legend class="quiz-q"><span class="qn">10</span>Qadamlari shartsiz va takrorlanishsiz, yozilgan tartibda birin-ketin bajariladigan algoritm qanday ataladi?</legend>
+    <div class="opts">
+      
+      <label class="opt">
+        <input type="radio" name="q10" value="0" required
+                >
+        <i>A</i><span>Chiziqli algoritm</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q10" value="1" required
+                >
+        <i>B</i><span>Tarmoqlanuvchi algoritm</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q10" value="2" required
+                >
+        <i>C</i><span>Takrorlanuvchi algoritm</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q10" value="3" required
+                >
+        <i>D</i><span>Psevdokod</span>
+      </label>
+      
+    </div>
+  </fieldset>
+  
+  <fieldset class="qblock " data-h="78ac683e" data-topic="3">
+    <a class="quiz-topic" href="mavzu-3-0.html">3-mavzu: Algoritm bosqichlarini mantiqiy ketma-ketlikda ifodalash</a>
+    <legend class="quiz-q"><span class="qn">11</span>Shartga qarab ikki yo‘ldan biri tanlanadigan algoritm qanday ataladi?</legend>
+    <div class="opts">
+      
+      <label class="opt">
+        <input type="radio" name="q11" value="0" required
+                >
+        <i>A</i><span>Chiziqli</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q11" value="1" required
+                >
+        <i>B</i><span>Takrorlanuvchi</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q11" value="2" required
+                >
+        <i>C</i><span>Tarmoqlanuvchi</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q11" value="3" required
+                >
+        <i>D</i><span>Ommaviy</span>
+      </label>
+      
+    </div>
+  </fieldset>
+  
+  <fieldset class="qblock " data-h="96ffd5bd" data-topic="3">
+    <a class="quiz-topic" href="mavzu-3-0.html">3-mavzu: Algoritm bosqichlarini mantiqiy ketma-ketlikda ifodalash</a>
+    <legend class="quiz-q"><span class="qn">12</span>x:= 2; y:= x + 3; x:= x · y algoritmidan so‘ng x ning qiymati nechaga teng?</legend>
+    <div class="opts">
+      
+      <label class="opt">
+        <input type="radio" name="q12" value="0" required
+                >
+        <i>A</i><span>10</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q12" value="1" required
+                >
+        <i>B</i><span>5</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q12" value="2" required
+                >
+        <i>C</i><span>2</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q12" value="3" required
+                >
+        <i>D</i><span>7</span>
+      </label>
+      
+    </div>
+  </fieldset>
+  
+  <fieldset class="qblock " data-h="91722869" data-topic="3">
+    <a class="quiz-topic" href="mavzu-3-0.html">3-mavzu: Algoritm bosqichlarini mantiqiy ketma-ketlikda ifodalash</a>
+    <legend class="quiz-q"><span class="qn">13</span>Qaysi qadam «S = a · b» hisoblashdan oldin turishi shart?</legend>
+    <div class="opts">
+      
+      <label class="opt">
+        <input type="radio" name="q13" value="0" required
+                >
+        <i>A</i><span>S ni chiqarish</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q13" value="1" required
+                >
+        <i>B</i><span>a va b ni kiritish</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q13" value="2" required
+                >
+        <i>C</i><span>Algoritmni tugatish</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q13" value="3" required
+                >
+        <i>D</i><span>Natijani tekshirish</span>
+      </label>
+      
+    </div>
+  </fieldset>
+  
+  <fieldset class="qblock " data-h="33daf631" data-topic="3">
+    <a class="quiz-topic" href="mavzu-3-0.html">3-mavzu: Algoritm bosqichlarini mantiqiy ketma-ketlikda ifodalash</a>
+    <legend class="quiz-q"><span class="qn">14</span>Trassirovka (bajarilish jadvali) nima?</legend>
+    <div class="opts">
+      
+      <label class="opt">
+        <input type="radio" name="q14" value="0" required
+                >
+        <i>A</i><span>Blok-sxemani chizish</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q14" value="1" required
+                >
+        <i>B</i><span>Dasturni kompilyatsiya qilish</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q14" value="2" required
+                >
+        <i>C</i><span>Algoritmni qog‘ozda qadamma-qadam bajarib, o‘zgaruvchilar qiymatini yozib borish</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q14" value="3" required
+                >
+        <i>D</i><span>Dasturni boshqa tilga tarjima qilish</span>
+      </label>
+      
+    </div>
+  </fieldset>
+  
+  <fieldset class="qblock " data-h="3c60e69f" data-topic="3">
+    <a class="quiz-topic" href="mavzu-3-0.html">3-mavzu: Algoritm bosqichlarini mantiqiy ketma-ketlikda ifodalash</a>
+    <legend class="quiz-q"><span class="qn">15</span>Takrorlanuvchi algoritmda to‘xtash sharti bo‘lmasa nima bo‘ladi?</legend>
+    <div class="opts">
+      
+      <label class="opt">
+        <input type="radio" name="q15" value="0" required
+                >
+        <i>A</i><span>Algoritm chiziqliga aylanadi</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q15" value="1" required
+                >
+        <i>B</i><span>U cheksiz davom etadi va natijaviylik xossasi buziladi</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q15" value="2" required
+                >
+        <i>C</i><span>Tana faqat bir marta bajariladi</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q15" value="3" required
+                >
+        <i>D</i><span>Algoritm ommaviylik xossasiga ega bo‘ladi</span>
+      </label>
+      
+    </div>
+  </fieldset>
+  
+  <fieldset class="qblock " data-h="da8c7b2e" data-topic="4">
+    <a class="quiz-topic" href="mavzu-4-0.html">4-mavzu: Python dasturlash tili va uning sintaksisi</a>
+    <legend class="quiz-q"><span class="qn">16</span>Pythonda izoh qaysi belgi bilan boshlanadi?</legend>
+    <div class="opts">
+      
+      <label class="opt">
+        <input type="radio" name="q16" value="0" required
+                >
+        <i>A</i><span>//</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q16" value="1" required
+                >
+        <i>B</i><span>#</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q16" value="2" required
+                >
+        <i>C</i><span>--</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q16" value="3" required
+                >
+        <i>D</i><span>%</span>
+      </label>
+      
+    </div>
+  </fieldset>
+  
+  <fieldset class="qblock " data-h="f3fefea7" data-topic="4">
+    <a class="quiz-topic" href="mavzu-4-0.html">4-mavzu: Python dasturlash tili va uning sintaksisi</a>
+    <legend class="quiz-q"><span class="qn">17</span>Pythonda kod bloki nima bilan belgilanadi?</legend>
+    <div class="opts">
+      
+      <label class="opt">
+        <input type="radio" name="q17" value="0" required
+                >
+        <i>A</i><span>Figurali qavslar bilan</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q17" value="1" required
+                >
+        <i>B</i><span>begin va end so‘zlari bilan</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q17" value="2" required
+                >
+        <i>C</i><span>Nuqtali vergul bilan</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q17" value="3" required
+                >
+        <i>D</i><span>Chekinish (bo‘sh joylar) bilan</span>
+      </label>
+      
+    </div>
+  </fieldset>
+  
+  <fieldset class="qblock " data-h="c40cf2af" data-topic="4">
+    <a class="quiz-topic" href="mavzu-4-0.html">4-mavzu: Python dasturlash tili va uning sintaksisi</a>
+    <legend class="quiz-q"><span class="qn">18</span>Print(&quot;Salom&quot;) buyrug‘i qanday natija beradi?</legend>
+    <div class="opts">
+      
+      <label class="opt">
+        <input type="radio" name="q18" value="0" required
+                >
+        <i>A</i><span>NameError xatosi</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q18" value="1" required
+                >
+        <i>B</i><span>Salom</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q18" value="2" required
+                >
+        <i>C</i><span>&quot;Salom&quot;</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q18" value="3" required
+                >
+        <i>D</i><span>Bo‘sh qator</span>
+      </label>
+      
+    </div>
+  </fieldset>
+  
+  <fieldset class="qblock " data-h="4e6b0d53" data-topic="4">
+    <a class="quiz-topic" href="mavzu-4-0.html">4-mavzu: Python dasturlash tili va uning sintaksisi</a>
+    <legend class="quiz-q"><span class="qn">19</span>Python dasturlash tilini kim yaratgan?</legend>
+    <div class="opts">
+      
+      <label class="opt">
+        <input type="radio" name="q19" value="0" required
+                >
+        <i>A</i><span>Bill Geyts</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q19" value="1" required
+                >
+        <i>B</i><span>Gvido van Rossum</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q19" value="2" required
+                >
+        <i>C</i><span>Dennis Ritchi</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q19" value="3" required
+                >
+        <i>D</i><span>Linus Torvalds</span>
+      </label>
+      
+    </div>
+  </fieldset>
+  
+  <fieldset class="qblock " data-h="0a71fd8a" data-topic="4">
+    <a class="quiz-topic" href="mavzu-4-0.html">4-mavzu: Python dasturlash tili va uning sintaksisi</a>
+    <legend class="quiz-q"><span class="qn">20</span>Pythonda if yosh &gt;= 18: qatoridan keyingi qator chekinishsiz (surilmasdan) yozilsa, qanday xato chiqadi?</legend>
+    <div class="opts">
+      
+      <label class="opt">
+        <input type="radio" name="q20" value="0" required
+                >
+        <i>A</i><span>NameError</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q20" value="1" required
+                >
+        <i>B</i><span>TypeError</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q20" value="2" required
+                >
+        <i>C</i><span>IndentationError</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q20" value="3" required
+                >
+        <i>D</i><span>ZeroDivisionError</span>
+      </label>
+      
+    </div>
+  </fieldset>
+  
+  <fieldset class="qblock " data-h="e2290da9" data-topic="5">
+    <a class="quiz-topic" href="mavzu-5-0.html">5-mavzu: Python dasturlash muhiti va oddiy kodlar</a>
+    <legend class="quiz-q"><span class="qn">21</span>Python fayllari qanday kengaytmaga ega?</legend>
+    <div class="opts">
+      
+      <label class="opt">
+        <input type="radio" name="q21" value="0" required
+                >
+        <i>A</i><span>.exe</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q21" value="1" required
+                >
+        <i>B</i><span>.txt</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q21" value="2" required
+                >
+        <i>C</i><span>.py</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q21" value="3" required
+                >
+        <i>D</i><span>.doc</span>
+      </label>
+      
+    </div>
+  </fieldset>
+  
+  <fieldset class="qblock " data-h="a34d17b2" data-topic="5">
+    <a class="quiz-topic" href="mavzu-5-0.html">5-mavzu: Python dasturlash muhiti va oddiy kodlar</a>
+    <legend class="quiz-q"><span class="qn">22</span>IDLE da skriptni ishga tushirish tugmasi:</legend>
+    <div class="opts">
+      
+      <label class="opt">
+        <input type="radio" name="q22" value="0" required
+                >
+        <i>A</i><span>F5</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q22" value="1" required
+                >
+        <i>B</i><span>F1</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q22" value="2" required
+                >
+        <i>C</i><span>Ctrl + C</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q22" value="3" required
+                >
+        <i>D</i><span>Esc</span>
+      </label>
+      
+    </div>
+  </fieldset>
+  
+  <fieldset class="qblock " data-h="88da92a6" data-topic="5">
+    <a class="quiz-topic" href="mavzu-5-0.html">5-mavzu: Python dasturlash muhiti va oddiy kodlar</a>
+    <legend class="quiz-q"><span class="qn">23</span>Interaktiv rejimda 7 / 2 ifodasining natijasi:</legend>
+    <div class="opts">
+      
+      <label class="opt">
+        <input type="radio" name="q23" value="0" required
+                >
+        <i>A</i><span>3</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q23" value="1" required
+                >
+        <i>B</i><span>3.5</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q23" value="2" required
+                >
+        <i>C</i><span>4</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q23" value="3" required
+                >
+        <i>D</i><span>Xato</span>
+      </label>
+      
+    </div>
+  </fieldset>
+  
+  <fieldset class="qblock " data-h="a4be1323" data-topic="5">
+    <a class="quiz-topic" href="mavzu-5-0.html">5-mavzu: Python dasturlash muhiti va oddiy kodlar</a>
+    <legend class="quiz-q"><span class="qn">24</span>IDLE interaktiv rejimida &quot;Salom&quot; * 3 ifodasining natijasi qanday?</legend>
+    <div class="opts">
+      
+      <label class="opt">
+        <input type="radio" name="q24" value="0" required
+                >
+        <i>A</i><span>&#x27;Salom3&#x27;</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q24" value="1" required
+                >
+        <i>B</i><span>&#x27;SalomSalomSalom&#x27;</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q24" value="2" required
+                >
+        <i>C</i><span>TypeError xatosi</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q24" value="3" required
+                >
+        <i>D</i><span>&#x27;Salom Salom Salom&#x27;</span>
+      </label>
+      
+    </div>
+  </fieldset>
+  
+  <fieldset class="qblock " data-h="9c9c6512" data-topic="5">
+    <a class="quiz-topic" href="mavzu-5-0.html">5-mavzu: Python dasturlash muhiti va oddiy kodlar</a>
+    <legend class="quiz-q"><span class="qn">25</span>IDLE interaktiv rejimida 10 - 4 * 2 ifodasining natijasi nechaga teng?</legend>
+    <div class="opts">
+      
+      <label class="opt">
+        <input type="radio" name="q25" value="0" required
+                >
+        <i>A</i><span>12</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q25" value="1" required
+                >
+        <i>B</i><span>-8</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q25" value="2" required
+                >
+        <i>C</i><span>6</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q25" value="3" required
+                >
+        <i>D</i><span>2</span>
+      </label>
+      
+    </div>
+  </fieldset>
+  
+  <fieldset class="qblock " data-h="5dc06f1b" data-topic="6">
+    <a class="quiz-topic" href="mavzu-6-0.html">6-mavzu: O‘zgaruvchilar va ma’lumot turlari</a>
+    <legend class="quiz-q"><span class="qn">26</span>Quyidagilardan qaysi biri to‘g‘ri o‘zgaruvchi nomi?</legend>
+    <div class="opts">
+      
+      <label class="opt">
+        <input type="radio" name="q26" value="0" required
+                >
+        <i>A</i><span>1kurs</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q26" value="1" required
+                >
+        <i>B</i><span>kurs-1</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q26" value="2" required
+                >
+        <i>C</i><span>kurs 1</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q26" value="3" required
+                >
+        <i>D</i><span>kurs_1</span>
+      </label>
+      
+    </div>
+  </fieldset>
+  
+  <fieldset class="qblock " data-h="454ded35" data-topic="6">
+    <a class="quiz-topic" href="mavzu-6-0.html">6-mavzu: O‘zgaruvchilar va ma’lumot turlari</a>
+    <legend class="quiz-q"><span class="qn">27</span>print(type(3.0)) natijasi:</legend>
+    <div class="opts">
+      
+      <label class="opt">
+        <input type="radio" name="q27" value="0" required
+                >
+        <i>A</i><span>&lt;class &#x27;float&#x27;&gt;</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q27" value="1" required
+                >
+        <i>B</i><span>&lt;class &#x27;int&#x27;&gt;</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q27" value="2" required
+                >
+        <i>C</i><span>&lt;class &#x27;str&#x27;&gt;</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q27" value="3" required
+                >
+        <i>D</i><span>&lt;class &#x27;bool&#x27;&gt;</span>
+      </label>
+      
+    </div>
+  </fieldset>
+  
+  <fieldset class="qblock " data-h="93b3ee02" data-topic="6">
+    <a class="quiz-topic" href="mavzu-6-0.html">6-mavzu: O‘zgaruvchilar va ma’lumot turlari</a>
+    <legend class="quiz-q"><span class="qn">28</span>x = 4, so‘ng x = x + 3 bajarilgach, x ning qiymati:</legend>
+    <div class="opts">
+      
+      <label class="opt">
+        <input type="radio" name="q28" value="0" required
+                >
+        <i>A</i><span>4</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q28" value="1" required
+                >
+        <i>B</i><span>3</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q28" value="2" required
+                >
+        <i>C</i><span>7</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q28" value="3" required
+                >
+        <i>D</i><span>43</span>
+      </label>
+      
+    </div>
+  </fieldset>
+  
+  <fieldset class="qblock " data-h="0a2d3281" data-topic="6">
+    <a class="quiz-topic" href="mavzu-6-0.html">6-mavzu: O‘zgaruvchilar va ma’lumot turlari</a>
+    <legend class="quiz-q"><span class="qn">29</span>print(0.1 + 0.2) buyrug‘i ekranga nima chiqaradi?</legend>
+    <div class="opts">
+      
+      <label class="opt">
+        <input type="radio" name="q29" value="0" required
+                >
+        <i>A</i><span>0.3</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q29" value="1" required
+                >
+        <i>B</i><span>TypeError xatosi</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q29" value="2" required
+                >
+        <i>C</i><span>0.30000000000000004</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q29" value="3" required
+                >
+        <i>D</i><span>0.2</span>
+      </label>
+      
+    </div>
+  </fieldset>
+  
+  <fieldset class="qblock " data-h="18a024cc" data-topic="6">
+    <a class="quiz-topic" href="mavzu-6-0.html">6-mavzu: O‘zgaruvchilar va ma’lumot turlari</a>
+    <legend class="quiz-q"><span class="qn">30</span>Quyidagi qiymatlardan qaysi biri str (satr) turiga tegishli?</legend>
+    <div class="opts">
+      
+      <label class="opt">
+        <input type="radio" name="q30" value="0" required
+                >
+        <i>A</i><span>25</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q30" value="1" required
+                >
+        <i>B</i><span>2.5</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q30" value="2" required
+                >
+        <i>C</i><span>True</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q30" value="3" required
+                >
+        <i>D</i><span>&quot;25&quot;</span>
+      </label>
+      
+    </div>
+  </fieldset>
+  
+  <fieldset class="qblock " data-h="3612ae91" data-topic="7">
+    <a class="quiz-topic" href="mavzu-7-0.html">7-mavzu: O‘zgaruvchilar yaratish va ma’lumot turlari</a>
+    <legend class="quiz-q"><span class="qn">31</span>a, b = 3, 8 dan keyin a, b = b, a bajarilsa, a ning qiymati:</legend>
+    <div class="opts">
+      
+      <label class="opt">
+        <input type="radio" name="q31" value="0" required
+                >
+        <i>A</i><span>3</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q31" value="1" required
+                >
+        <i>B</i><span>8</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q31" value="2" required
+                >
+        <i>C</i><span>11</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q31" value="3" required
+                >
+        <i>D</i><span>Xato</span>
+      </label>
+      
+    </div>
+  </fieldset>
+  
+  <fieldset class="qblock " data-h="73eea2f5" data-topic="7">
+    <a class="quiz-topic" href="mavzu-7-0.html">7-mavzu: O‘zgaruvchilar yaratish va ma’lumot turlari</a>
+    <legend class="quiz-q"><span class="qn">32</span>len(&quot;Salom&quot;) natijasi:</legend>
+    <div class="opts">
+      
+      <label class="opt">
+        <input type="radio" name="q32" value="0" required
+                >
+        <i>A</i><span>4</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q32" value="1" required
+                >
+        <i>B</i><span>6</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q32" value="2" required
+                >
+        <i>C</i><span>5</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q32" value="3" required
+                >
+        <i>D</i><span>Salom</span>
+      </label>
+      
+    </div>
+  </fieldset>
+  
+  <fieldset class="qblock " data-h="7e4d8719" data-topic="7">
+    <a class="quiz-topic" href="mavzu-7-0.html">7-mavzu: O‘zgaruvchilar yaratish va ma’lumot turlari</a>
+    <legend class="quiz-q"><span class="qn">33</span>Quyidagilardan qaysi biri ValueError beradi?</legend>
+    <div class="opts">
+      
+      <label class="opt">
+        <input type="radio" name="q33" value="0" required
+                >
+        <i>A</i><span>int(&quot;12&quot;)</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q33" value="1" required
+                >
+        <i>B</i><span>float(&quot;2.5&quot;)</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q33" value="2" required
+                >
+        <i>C</i><span>str(12)</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q33" value="3" required
+                >
+        <i>D</i><span>int(&quot;abc&quot;)</span>
+      </label>
+      
+    </div>
+  </fieldset>
+  
+  <fieldset class="qblock " data-h="df2d9876" data-topic="7">
+    <a class="quiz-topic" href="mavzu-7-0.html">7-mavzu: O‘zgaruvchilar yaratish va ma’lumot turlari</a>
+    <legend class="quiz-q"><span class="qn">34</span>int(7.9) ifodasining natijasi nechaga teng?</legend>
+    <div class="opts">
+      
+      <label class="opt">
+        <input type="radio" name="q34" value="0" required
+                >
+        <i>A</i><span>8</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q34" value="1" required
+                >
+        <i>B</i><span>7</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q34" value="2" required
+                >
+        <i>C</i><span>7.9</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q34" value="3" required
+                >
+        <i>D</i><span>ValueError xatosi</span>
+      </label>
+      
+    </div>
+  </fieldset>
+  
+  <fieldset class="qblock " data-h="f7a01a5c" data-topic="7">
+    <a class="quiz-topic" href="mavzu-7-0.html">7-mavzu: O‘zgaruvchilar yaratish va ma’lumot turlari</a>
+    <legend class="quiz-q"><span class="qn">35</span>bool(&quot;0&quot;) ifodasining natijasi qanday?</legend>
+    <div class="opts">
+      
+      <label class="opt">
+        <input type="radio" name="q35" value="0" required
+                >
+        <i>A</i><span>False</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q35" value="1" required
+                >
+        <i>B</i><span>0</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q35" value="2" required
+                >
+        <i>C</i><span>True</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q35" value="3" required
+                >
+        <i>D</i><span>ValueError xatosi</span>
+      </label>
+      
+    </div>
+  </fieldset>
+  
+  <fieldset class="qblock " data-h="b87b49f9" data-topic="8">
+    <a class="quiz-topic" href="mavzu-8-0.html">8-mavzu: Kiritish va chiqarish operatorlari</a>
+    <legend class="quiz-q"><span class="qn">36</span>print(&quot;A&quot;, &quot;B&quot;, &quot;C&quot;, sep=&quot;-&quot;) natijasi qanday?</legend>
+    <div class="opts">
+      
+      <label class="opt">
+        <input type="radio" name="q36" value="0" required
+                >
+        <i>A</i><span>A B C</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q36" value="1" required
+                >
+        <i>B</i><span>ABC</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q36" value="2" required
+                >
+        <i>C</i><span>A-B-C</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q36" value="3" required
+                >
+        <i>D</i><span>A-B-C-</span>
+      </label>
+      
+    </div>
+  </fieldset>
+  
+  <fieldset class="qblock " data-h="5ec50034" data-topic="8">
+    <a class="quiz-topic" href="mavzu-8-0.html">8-mavzu: Kiritish va chiqarish operatorlari</a>
+    <legend class="quiz-q"><span class="qn">37</span>input() funksiyasi qaytaradigan qiymat turi qaysi?</legend>
+    <div class="opts">
+      
+      <label class="opt">
+        <input type="radio" name="q37" value="0" required
+                >
+        <i>A</i><span>str</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q37" value="1" required
+                >
+        <i>B</i><span>int</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q37" value="2" required
+                >
+        <i>C</i><span>float</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q37" value="3" required
+                >
+        <i>D</i><span>Kiritilgan qiymatga qarab o‘zgaradi</span>
+      </label>
+      
+    </div>
+  </fieldset>
+  
+  <fieldset class="qblock " data-h="43e1814a" data-topic="8">
+    <a class="quiz-topic" href="mavzu-8-0.html">8-mavzu: Kiritish va chiqarish operatorlari</a>
+    <legend class="quiz-q"><span class="qn">38</span>Foydalanuvchidan butun son olishning to‘g‘ri yozuvi qaysi?</legend>
+    <div class="opts">
+      
+      <label class="opt">
+        <input type="radio" name="q38" value="0" required
+                >
+        <i>A</i><span>n = input(int())</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q38" value="1" required
+                >
+        <i>B</i><span>n = int(input())</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q38" value="2" required
+                >
+        <i>C</i><span>n = int input()</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q38" value="3" required
+                >
+        <i>D</i><span>n = input(&quot;int&quot;)</span>
+      </label>
+      
+    </div>
+  </fieldset>
+  
+  <fieldset class="qblock " data-h="bd549be3" data-topic="8">
+    <a class="quiz-topic" href="mavzu-8-0.html">8-mavzu: Kiritish va chiqarish operatorlari</a>
+    <legend class="quiz-q"><span class="qn">39</span>print(f&quot;{2 / 3:.1f}&quot;) natijasi qanday?</legend>
+    <div class="opts">
+      
+      <label class="opt">
+        <input type="radio" name="q39" value="0" required
+                >
+        <i>A</i><span>0.66</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q39" value="1" required
+                >
+        <i>B</i><span>0.67</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q39" value="2" required
+                >
+        <i>C</i><span>0.6</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q39" value="3" required
+                >
+        <i>D</i><span>0.7</span>
+      </label>
+      
+    </div>
+  </fieldset>
+  
+  <fieldset class="qblock " data-h="03ebe615" data-topic="8">
+    <a class="quiz-topic" href="mavzu-8-0.html">8-mavzu: Kiritish va chiqarish operatorlari</a>
+    <legend class="quiz-q"><span class="qn">40</span>print() funksiyasida qator oxirida yangi qatorga o‘tmaslik uchun qaysi parametr ishlatiladi?</legend>
+    <div class="opts">
+      
+      <label class="opt">
+        <input type="radio" name="q40" value="0" required
+                >
+        <i>A</i><span>sep</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q40" value="1" required
+                >
+        <i>B</i><span>end</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q40" value="2" required
+                >
+        <i>C</i><span>file</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q40" value="3" required
+                >
+        <i>D</i><span>flush</span>
+      </label>
+      
+    </div>
+  </fieldset>
+  
+  <fieldset class="qblock " data-h="e7795de3" data-topic="9">
+    <a class="quiz-topic" href="mavzu-9-0.html">9-mavzu: input() va print() operatorlari bilan ishlash</a>
+    <legend class="quiz-q"><span class="qn">41</span>mb = 2048 bo‘lsa, print(f&quot;{mb / 1024:.2f}&quot;) natijasi qanday?</legend>
+    <div class="opts">
+      
+      <label class="opt">
+        <input type="radio" name="q41" value="0" required
+                >
+        <i>A</i><span>2</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q41" value="1" required
+                >
+        <i>B</i><span>2.0</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q41" value="2" required
+                >
+        <i>C</i><span>2.00</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q41" value="3" required
+                >
+        <i>D</i><span>2.048</span>
+      </label>
+      
+    </div>
+  </fieldset>
+  
+  <fieldset class="qblock " data-h="6810c734" data-topic="9">
+    <a class="quiz-topic" href="mavzu-9-0.html">9-mavzu: input() va print() operatorlari bilan ishlash</a>
+    <legend class="quiz-q"><span class="qn">42</span>a = input() va b = input() ga 3 va 4 kiritilsa, print(a + b) natijasi qanday?</legend>
+    <div class="opts">
+      
+      <label class="opt">
+        <input type="radio" name="q42" value="0" required
+                >
+        <i>A</i><span>34</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q42" value="1" required
+                >
+        <i>B</i><span>7</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q42" value="2" required
+                >
+        <i>C</i><span>3 4</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q42" value="3" required
+                >
+        <i>D</i><span>TypeError</span>
+      </label>
+      
+    </div>
+  </fieldset>
+  
+  <fieldset class="qblock " data-h="bec70c40" data-topic="9">
+    <a class="quiz-topic" href="mavzu-9-0.html">9-mavzu: input() va print() operatorlari bilan ishlash</a>
+    <legend class="quiz-q"><span class="qn">43</span>IDLE da faylda yozilgan dasturni ishga tushirish tugmasi qaysi?</legend>
+    <div class="opts">
+      
+      <label class="opt">
+        <input type="radio" name="q43" value="0" required
+                >
+        <i>A</i><span>F1</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q43" value="1" required
+                >
+        <i>B</i><span>F5</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q43" value="2" required
+                >
+        <i>C</i><span>Ctrl + S</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q43" value="3" required
+                >
+        <i>D</i><span>Ctrl + N</span>
+      </label>
+      
+    </div>
+  </fieldset>
+  
+  <fieldset class="qblock " data-h="3d5e726b" data-topic="9">
+    <a class="quiz-topic" href="mavzu-9-0.html">9-mavzu: input() va print() operatorlari bilan ishlash</a>
+    <legend class="quiz-q"><span class="qn">44</span>print(&quot;=&quot; * 5) natijasi qanday?</legend>
+    <div class="opts">
+      
+      <label class="opt">
+        <input type="radio" name="q44" value="0" required
+                >
+        <i>A</i><span>=5</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q44" value="1" required
+                >
+        <i>B</i><span>= = = = =</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q44" value="2" required
+                >
+        <i>C</i><span>TypeError</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q44" value="3" required
+                >
+        <i>D</i><span>=====</span>
+      </label>
+      
+    </div>
+  </fieldset>
+  
+  <fieldset class="qblock " data-h="22ebed5f" data-topic="9">
+    <a class="quiz-topic" href="mavzu-9-0.html">9-mavzu: input() va print() operatorlari bilan ishlash</a>
+    <legend class="quiz-q"><span class="qn">45</span>Foydalanuvchi kasr son kiritishi kutilsa, qaysi yozuv to‘g‘ri?</legend>
+    <div class="opts">
+      
+      <label class="opt">
+        <input type="radio" name="q45" value="0" required
+                >
+        <i>A</i><span>x = int(input())</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q45" value="1" required
+                >
+        <i>B</i><span>x = input(float)</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q45" value="2" required
+                >
+        <i>C</i><span>x = float(input())</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q45" value="3" required
+                >
+        <i>D</i><span>x = str(input())</span>
+      </label>
+      
+    </div>
+  </fieldset>
+  
+  <fieldset class="qblock " data-h="85994af3" data-topic="10">
+    <a class="quiz-topic" href="mavzu-10-0.html">10-mavzu: Arifmetik va mantiqiy operatorlar</a>
+    <legend class="quiz-q"><span class="qn">46</span>17 // 5 ifodasining natijasi qanday?</legend>
+    <div class="opts">
+      
+      <label class="opt">
+        <input type="radio" name="q46" value="0" required
+                >
+        <i>A</i><span>3.4</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q46" value="1" required
+                >
+        <i>B</i><span>3</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q46" value="2" required
+                >
+        <i>C</i><span>2</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q46" value="3" required
+                >
+        <i>D</i><span>4</span>
+      </label>
+      
+    </div>
+  </fieldset>
+  
+  <fieldset class="qblock " data-h="7d3a69f5" data-topic="10">
+    <a class="quiz-topic" href="mavzu-10-0.html">10-mavzu: Arifmetik va mantiqiy operatorlar</a>
+    <legend class="quiz-q"><span class="qn">47</span>10 / 2 ifodasining natijasi qanday?</legend>
+    <div class="opts">
+      
+      <label class="opt">
+        <input type="radio" name="q47" value="0" required
+                >
+        <i>A</i><span>5</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q47" value="1" required
+                >
+        <i>B</i><span>2</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q47" value="2" required
+                >
+        <i>C</i><span>5.0</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q47" value="3" required
+                >
+        <i>D</i><span>0</span>
+      </label>
+      
+    </div>
+  </fieldset>
+  
+  <fieldset class="qblock " data-h="2b2d3c47" data-topic="10">
+    <a class="quiz-topic" href="mavzu-10-0.html">10-mavzu: Arifmetik va mantiqiy operatorlar</a>
+    <legend class="quiz-q"><span class="qn">48</span>x = 7 bo‘lsa, x &gt; 5 and x % 2 == 0 ifodasi natijasi qanday?</legend>
+    <div class="opts">
+      
+      <label class="opt">
+        <input type="radio" name="q48" value="0" required
+                >
+        <i>A</i><span>True</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q48" value="1" required
+                >
+        <i>B</i><span>7</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q48" value="2" required
+                >
+        <i>C</i><span>Xato</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q48" value="3" required
+                >
+        <i>D</i><span>False</span>
+      </label>
+      
+    </div>
+  </fieldset>
+  
+  <fieldset class="qblock " data-h="12baba61" data-topic="10">
+    <a class="quiz-topic" href="mavzu-10-0.html">10-mavzu: Arifmetik va mantiqiy operatorlar</a>
+    <legend class="quiz-q"><span class="qn">49</span>Quyidagilardan qaysi biri «teng emas» operatori?</legend>
+    <div class="opts">
+      
+      <label class="opt">
+        <input type="radio" name="q49" value="0" required
+                >
+        <i>A</i><span>!=</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q49" value="1" required
+                >
+        <i>B</i><span>=!</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q49" value="2" required
+                >
+        <i>C</i><span>&lt;&gt;</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q49" value="3" required
+                >
+        <i>D</i><span>==</span>
+      </label>
+      
+    </div>
+  </fieldset>
+  
+  <fieldset class="qblock " data-h="8873b790" data-topic="10">
+    <a class="quiz-topic" href="mavzu-10-0.html">10-mavzu: Arifmetik va mantiqiy operatorlar</a>
+    <legend class="quiz-q"><span class="qn">50</span>-2 2 ifodasining natijasi qanday?**</legend>
+    <div class="opts">
+      
+      <label class="opt">
+        <input type="radio" name="q50" value="0" required
+                >
+        <i>A</i><span>4</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q50" value="1" required
+                >
+        <i>B</i><span>-4</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q50" value="2" required
+                >
+        <i>C</i><span>0</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q50" value="3" required
+                >
+        <i>D</i><span>Xato</span>
+      </label>
+      
+    </div>
+  </fieldset>
+  
+  <fieldset class="qblock " data-h="b3f9df17" data-topic="11">
+    <a class="quiz-topic" href="mavzu-11-0.html">11-mavzu: Arifmetik operatorlar yordamida hisoblash dasturlarini tuzish</a>
+    <legend class="quiz-q"><span class="qn">51</span>x = 8 bo‘lsa, x //= 3 dan keyin x ning qiymati qanday?</legend>
+    <div class="opts">
+      
+      <label class="opt">
+        <input type="radio" name="q51" value="0" required
+                >
+        <i>A</i><span>2.67</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q51" value="1" required
+                >
+        <i>B</i><span>2</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q51" value="2" required
+                >
+        <i>C</i><span>3</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q51" value="3" required
+                >
+        <i>D</i><span>5</span>
+      </label>
+      
+    </div>
+  </fieldset>
+  
+  <fieldset class="qblock " data-h="332542d9" data-topic="11">
+    <a class="quiz-topic" href="mavzu-11-0.html">11-mavzu: Arifmetik operatorlar yordamida hisoblash dasturlarini tuzish</a>
+    <legend class="quiz-q"><span class="qn">52</span>round(3.14159, 2) natijasi qanday?</legend>
+    <div class="opts">
+      
+      <label class="opt">
+        <input type="radio" name="q52" value="0" required
+                >
+        <i>A</i><span>3.14</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q52" value="1" required
+                >
+        <i>B</i><span>3.1</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q52" value="2" required
+                >
+        <i>C</i><span>3.15</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q52" value="3" required
+                >
+        <i>D</i><span>3</span>
+      </label>
+      
+    </div>
+  </fieldset>
+  
+  <fieldset class="qblock " data-h="4b97c4bf" data-topic="11">
+    <a class="quiz-topic" href="mavzu-11-0.html">11-mavzu: Arifmetik operatorlar yordamida hisoblash dasturlarini tuzish</a>
+    <legend class="quiz-q"><span class="qn">53</span>n = 586 bo‘lsa, n // 10 % 10 natijasi qanday?</legend>
+    <div class="opts">
+      
+      <label class="opt">
+        <input type="radio" name="q53" value="0" required
+                >
+        <i>A</i><span>5</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q53" value="1" required
+                >
+        <i>B</i><span>6</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q53" value="2" required
+                >
+        <i>C</i><span>58</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q53" value="3" required
+                >
+        <i>D</i><span>8</span>
+      </label>
+      
+    </div>
+  </fieldset>
+  
+  <fieldset class="qblock " data-h="c6e64bc5" data-topic="11">
+    <a class="quiz-topic" href="mavzu-11-0.html">11-mavzu: Arifmetik operatorlar yordamida hisoblash dasturlarini tuzish</a>
+    <legend class="quiz-q"><span class="qn">54</span>(a + b) / 2 formulasining Pythondagi to‘g‘ri yozuvi qaysi?</legend>
+    <div class="opts">
+      
+      <label class="opt">
+        <input type="radio" name="q54" value="0" required
+                >
+        <i>A</i><span>a + b / 2</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q54" value="1" required
+                >
+        <i>B</i><span>a + b // 2</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q54" value="2" required
+                >
+        <i>C</i><span>(a + b) / 2</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q54" value="3" required
+                >
+        <i>D</i><span>(a + b) \ 2</span>
+      </label>
+      
+    </div>
+  </fieldset>
+  
+  <fieldset class="qblock " data-h="cf452cc3" data-topic="11">
+    <a class="quiz-topic" href="mavzu-11-0.html">11-mavzu: Arifmetik operatorlar yordamida hisoblash dasturlarini tuzish</a>
+    <legend class="quiz-q"><span class="qn">55</span>math.sqrt(25) natijasi qanday?</legend>
+    <div class="opts">
+      
+      <label class="opt">
+        <input type="radio" name="q55" value="0" required
+                >
+        <i>A</i><span>5</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q55" value="1" required
+                >
+        <i>B</i><span>5.0</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q55" value="2" required
+                >
+        <i>C</i><span>625</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q55" value="3" required
+                >
+        <i>D</i><span>12.5</span>
+      </label>
+      
+    </div>
+  </fieldset>
+  
+  <fieldset class="qblock " data-h="eed5cec2" data-topic="12">
+    <a class="quiz-topic" href="mavzu-12-0.html">12-mavzu: Mantiqiy operatorlardan foydalanish</a>
+    <legend class="quiz-q"><span class="qn">56</span>n = 15 bo‘lsa, n % 2 == 0 ifodasining natijasi qanday?</legend>
+    <div class="opts">
+      
+      <label class="opt">
+        <input type="radio" name="q56" value="0" required
+                >
+        <i>A</i><span>True</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q56" value="1" required
+                >
+        <i>B</i><span>False</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q56" value="2" required
+                >
+        <i>C</i><span>1</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q56" value="3" required
+                >
+        <i>D</i><span>0</span>
+      </label>
+      
+    </div>
+  </fieldset>
+  
+  <fieldset class="qblock " data-h="070b1dbb" data-topic="12">
+    <a class="quiz-topic" href="mavzu-12-0.html">12-mavzu: Mantiqiy operatorlardan foydalanish</a>
+    <legend class="quiz-q"><span class="qn">57</span>y = 1900 bo‘lsa, (y % 4 == 0 and y % 100!= 0) or y % 400 == 0 natijasi qanday?</legend>
+    <div class="opts">
+      
+      <label class="opt">
+        <input type="radio" name="q57" value="0" required
+                >
+        <i>A</i><span>True</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q57" value="1" required
+                >
+        <i>B</i><span>1900</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q57" value="2" required
+                >
+        <i>C</i><span>Xato</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q57" value="3" required
+                >
+        <i>D</i><span>False</span>
+      </label>
+      
+    </div>
+  </fieldset>
+  
+  <fieldset class="qblock " data-h="b2b5127b" data-topic="12">
+    <a class="quiz-topic" href="mavzu-12-0.html">12-mavzu: Mantiqiy operatorlardan foydalanish</a>
+    <legend class="quiz-q"><span class="qn">58</span>x son 1 dan 10 gacha oraliqda (chegaralar bilan) ekanini qaysi ifoda to‘g‘ri tekshiradi?</legend>
+    <div class="opts">
+      
+      <label class="opt">
+        <input type="radio" name="q58" value="0" required
+                >
+        <i>A</i><span>1 &lt;= x &lt;= 10</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q58" value="1" required
+                >
+        <i>B</i><span>1 &lt; x &lt; 10</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q58" value="2" required
+                >
+        <i>C</i><span>x &gt;= 1 or x &lt;= 10</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q58" value="3" required
+                >
+        <i>D</i><span>x =&gt; 1 and x =&lt; 10</span>
+      </label>
+      
+    </div>
+  </fieldset>
+  
+  <fieldset class="qblock " data-h="bcfdd322" data-topic="12">
+    <a class="quiz-topic" href="mavzu-12-0.html">12-mavzu: Mantiqiy operatorlardan foydalanish</a>
+    <legend class="quiz-q"><span class="qn">59</span>not (a and b) ifodasi qaysi ifoda bilan teng kuchli?</legend>
+    <div class="opts">
+      
+      <label class="opt">
+        <input type="radio" name="q59" value="0" required
+                >
+        <i>A</i><span>not a and not b</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q59" value="1" required
+                >
+        <i>B</i><span>a or b</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q59" value="2" required
+                >
+        <i>C</i><span>not a or not b</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q59" value="3" required
+                >
+        <i>D</i><span>a and not b</span>
+      </label>
+      
+    </div>
+  </fieldset>
+  
+  <fieldset class="qblock " data-h="a5976913" data-topic="12">
+    <a class="quiz-topic" href="mavzu-12-0.html">12-mavzu: Mantiqiy operatorlardan foydalanish</a>
+    <legend class="quiz-q"><span class="qn">60</span>x = 0 bo‘lsa, x!= 0 and 10 / x &gt; 1 ifodasi natijasi qanday?</legend>
+    <div class="opts">
+      
+      <label class="opt">
+        <input type="radio" name="q60" value="0" required
+                >
+        <i>A</i><span>ZeroDivisionError</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q60" value="1" required
+                >
+        <i>B</i><span>False</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q60" value="2" required
+                >
+        <i>C</i><span>True</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q60" value="3" required
+                >
+        <i>D</i><span>0</span>
+      </label>
+      
+    </div>
+  </fieldset>
+  
+  <fieldset class="qblock " data-h="1d395195" data-topic="13">
+    <a class="quiz-topic" href="mavzu-13-0.html">13-mavzu: Shart operatorlari va ulardan foydalanish</a>
+    <legend class="quiz-q"><span class="qn">61</span>if operatori qatori qaysi belgi bilan tugashi shart?</legend>
+    <div class="opts">
+      
+      <label class="opt">
+        <input type="radio" name="q61" value="0" required
+                >
+        <i>A</i><span>;</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q61" value="1" required
+                >
+        <i>B</i><span>.</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q61" value="2" required
+                >
+        <i>C</i><span>:</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q61" value="3" required
+                >
+        <i>D</i><span>,</span>
+      </label>
+      
+    </div>
+  </fieldset>
+  
+  <fieldset class="qblock " data-h="e09a91b1" data-topic="13">
+    <a class="quiz-topic" href="mavzu-13-0.html">13-mavzu: Shart operatorlari va ulardan foydalanish</a>
+    <legend class="quiz-q"><span class="qn">62</span>ball = 78 bo‘lsa, darsdagi baho dasturi qanday natija chiqaradi?</legend>
+    <div class="opts">
+      
+      <label class="opt">
+        <input type="radio" name="q62" value="0" required
+                >
+        <i>A</i><span>Baho: 5</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q62" value="1" required
+                >
+        <i>B</i><span>Baho: 4</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q62" value="2" required
+                >
+        <i>C</i><span>Baho: 3</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q62" value="3" required
+                >
+        <i>D</i><span>Baho: 2</span>
+      </label>
+      
+    </div>
+  </fieldset>
+  
+  <fieldset class="qblock " data-h="c6280ca5" data-topic="13">
+    <a class="quiz-topic" href="mavzu-13-0.html">13-mavzu: Shart operatorlari va ulardan foydalanish</a>
+    <legend class="quiz-q"><span class="qn">63</span>Blok-sxemada shart qaysi shakl bilan tasvirlanadi?</legend>
+    <div class="opts">
+      
+      <label class="opt">
+        <input type="radio" name="q63" value="0" required
+                >
+        <i>A</i><span>Romb</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q63" value="1" required
+                >
+        <i>B</i><span>To‘g‘ri to‘rtburchak</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q63" value="2" required
+                >
+        <i>C</i><span>Parallelogramm</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q63" value="3" required
+                >
+        <i>D</i><span>Oval</span>
+      </label>
+      
+    </div>
+  </fieldset>
+  
+  <fieldset class="qblock " data-h="8c4c1e8d" data-topic="13">
+    <a class="quiz-topic" href="mavzu-13-0.html">13-mavzu: Shart operatorlari va ulardan foydalanish</a>
+    <legend class="quiz-q"><span class="qn">64</span>n = 7 bo‘lsa, &quot;juft&quot; if n % 2 == 0 else &quot;toq&quot; ifodasi natijasi qanday?</legend>
+    <div class="opts">
+      
+      <label class="opt">
+        <input type="radio" name="q64" value="0" required
+                >
+        <i>A</i><span>juft</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q64" value="1" required
+                >
+        <i>B</i><span>True</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q64" value="2" required
+                >
+        <i>C</i><span>7</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q64" value="3" required
+                >
+        <i>D</i><span>toq</span>
+      </label>
+      
+    </div>
+  </fieldset>
+  
+  <fieldset class="qblock " data-h="61c5f899" data-topic="13">
+    <a class="quiz-topic" href="mavzu-13-0.html">13-mavzu: Shart operatorlari va ulardan foydalanish</a>
+    <legend class="quiz-q"><span class="qn">65</span>if-elif-else konstruksiyasida else qismi qachon bajariladi?</legend>
+    <div class="opts">
+      
+      <label class="opt">
+        <input type="radio" name="q65" value="0" required
+                >
+        <i>A</i><span>Har doim</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q65" value="1" required
+                >
+        <i>B</i><span>Birinchi shart rost bo‘lsa</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q65" value="2" required
+                >
+        <i>C</i><span>Hech bir shart rost bo‘lmasa</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q65" value="3" required
+                >
+        <i>D</i><span>Barcha shartlar rost bo‘lsa</span>
+      </label>
+      
+    </div>
+  </fieldset>
+  
+  <fieldset class="qblock " data-h="23ea0435" data-topic="14">
+    <a class="quiz-topic" href="mavzu-14-0.html">14-mavzu: if shart operatori yordamida dastur tuzish</a>
+    <legend class="quiz-q"><span class="qn">66</span>Qaysi yozuv sintaktik jihatdan to‘g‘ri?</legend>
+    <div class="opts">
+      
+      <label class="opt">
+        <input type="radio" name="q66" value="0" required
+                >
+        <i>A</i><span>if x &gt; 5</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q66" value="1" required
+                >
+        <i>B</i><span>if x &gt; 5:</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q66" value="2" required
+                >
+        <i>C</i><span>if (x &gt; 5) then:</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q66" value="3" required
+                >
+        <i>D</i><span>if x =&gt; 5:</span>
+      </label>
+      
+    </div>
+  </fieldset>
+  
+  <fieldset class="qblock " data-h="07b4aef0" data-topic="14">
+    <a class="quiz-topic" href="mavzu-14-0.html">14-mavzu: if shart operatori yordamida dastur tuzish</a>
+    <legend class="quiz-q"><span class="qn">67</span>t = 36.6 bo‘lsa, «if t &gt; 37: print(&quot;Isitma&quot;)» dan keyin «print(&quot;Tugadi&quot;)» yozilgan dastur nima chiqaradi?</legend>
+    <div class="opts">
+      
+      <label class="opt">
+        <input type="radio" name="q67" value="0" required
+                >
+        <i>A</i><span>Isitma</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q67" value="1" required
+                >
+        <i>B</i><span>Isitma va Tugadi</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q67" value="2" required
+                >
+        <i>C</i><span>Hech narsa</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q67" value="3" required
+                >
+        <i>D</i><span>Tugadi</span>
+      </label>
+      
+    </div>
+  </fieldset>
+  
+  <fieldset class="qblock " data-h="cdd8c0d8" data-topic="14">
+    <a class="quiz-topic" href="mavzu-14-0.html">14-mavzu: if shart operatori yordamida dastur tuzish</a>
+    <legend class="quiz-q"><span class="qn">68</span>if x = 5: qatori qaysi xatoni beradi?</legend>
+    <div class="opts">
+      
+      <label class="opt">
+        <input type="radio" name="q68" value="0" required
+                >
+        <i>A</i><span>SyntaxError</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q68" value="1" required
+                >
+        <i>B</i><span>NameError</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q68" value="2" required
+                >
+        <i>C</i><span>ZeroDivisionError</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q68" value="3" required
+                >
+        <i>D</i><span>ValueError</span>
+      </label>
+      
+    </div>
+  </fieldset>
+  
+  <fieldset class="qblock " data-h="467aaaed" data-topic="14">
+    <a class="quiz-topic" href="mavzu-14-0.html">14-mavzu: if shart operatori yordamida dastur tuzish</a>
+    <legend class="quiz-q"><span class="qn">69</span>Yosh 14 dan 18 gacha (chegaralar bilan) ekanini tekshiruvchi shart:</legend>
+    <div class="opts">
+      
+      <label class="opt">
+        <input type="radio" name="q69" value="0" required
+                >
+        <i>A</i><span>14 &lt; yosh &lt; 18</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q69" value="1" required
+                >
+        <i>B</i><span>yosh &gt;= 14 or yosh &lt;= 18</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q69" value="2" required
+                >
+        <i>C</i><span>14 &lt;= yosh &lt;= 18</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q69" value="3" required
+                >
+        <i>D</i><span>yosh == 14 and 18</span>
+      </label>
+      
+    </div>
+  </fieldset>
+  
+  <fieldset class="qblock " data-h="b88e59e8" data-topic="14">
+    <a class="quiz-topic" href="mavzu-14-0.html">14-mavzu: if shart operatori yordamida dastur tuzish</a>
+    <legend class="quiz-q"><span class="qn">70</span>n = 12 uchun «if n % 2 == 0», «if n % 3 == 0», «if n &gt; 10» shartlarining nechtasi rost?</legend>
+    <div class="opts">
+      
+      <label class="opt">
+        <input type="radio" name="q70" value="0" required
+                >
+        <i>A</i><span>1 ta</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q70" value="1" required
+                >
+        <i>B</i><span>2 ta</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q70" value="2" required
+                >
+        <i>C</i><span>Hech biri</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q70" value="3" required
+                >
+        <i>D</i><span>3 ta</span>
+      </label>
+      
+    </div>
+  </fieldset>
+  
+  <fieldset class="qblock " data-h="d600e3ad" data-topic="15">
+    <a class="quiz-topic" href="mavzu-15-0.html">15-mavzu: if-else va if-elif-else konstruksiyalaridan foydalanish</a>
+    <legend class="quiz-q"><span class="qn">71</span>n = 7 bo‘lsa, «if n % 2 == 0: print(&quot;juft&quot;) else: print(&quot;toq&quot;)» nima chiqaradi?</legend>
+    <div class="opts">
+      
+      <label class="opt">
+        <input type="radio" name="q71" value="0" required
+                >
+        <i>A</i><span>juft</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q71" value="1" required
+                >
+        <i>B</i><span>toq</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q71" value="2" required
+                >
+        <i>C</i><span>juft va toq</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q71" value="3" required
+                >
+        <i>D</i><span>Xato beradi</span>
+      </label>
+      
+    </div>
+  </fieldset>
+  
+  <fieldset class="qblock " data-h="909ed6eb" data-topic="15">
+    <a class="quiz-topic" href="mavzu-15-0.html">15-mavzu: if-else va if-elif-else konstruksiyalaridan foydalanish</a>
+    <legend class="quiz-q"><span class="qn">72</span>if-elif-else zanjirida bir nechta shart rost bo‘lsa, qaysi tarmoq bajariladi?</legend>
+    <div class="opts">
+      
+      <label class="opt">
+        <input type="radio" name="q72" value="0" required
+                >
+        <i>A</i><span>Faqat birinchi rost shart tarmog‘i</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q72" value="1" required
+                >
+        <i>B</i><span>Barcha rost shartlar tarmoqlari</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q72" value="2" required
+                >
+        <i>C</i><span>Oxirgi rost shart tarmog‘i</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q72" value="3" required
+                >
+        <i>D</i><span>Faqat else</span>
+      </label>
+      
+    </div>
+  </fieldset>
+  
+  <fieldset class="qblock " data-h="1d259725" data-topic="15">
+    <a class="quiz-topic" href="mavzu-15-0.html">15-mavzu: if-else va if-elif-else konstruksiyalaridan foydalanish</a>
+    <legend class="quiz-q"><span class="qn">73</span>«else ball &lt; 56:» qatori qaysi xabarni beradi?</legend>
+    <div class="opts">
+      
+      <label class="opt">
+        <input type="radio" name="q73" value="0" required
+                >
+        <i>A</i><span>NameError</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q73" value="1" required
+                >
+        <i>B</i><span>ValueError</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q73" value="2" required
+                >
+        <i>C</i><span>TypeError</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q73" value="3" required
+                >
+        <i>D</i><span>SyntaxError: expected &#x27;:&#x27;</span>
+      </label>
+      
+    </div>
+  </fieldset>
+  
+  <fieldset class="qblock " data-h="f500eaf7" data-topic="15">
+    <a class="quiz-topic" href="mavzu-15-0.html">15-mavzu: if-else va if-elif-else konstruksiyalaridan foydalanish</a>
+    <legend class="quiz-q"><span class="qn">74</span>Qaysi yil kabisa yili hisoblanadi?</legend>
+    <div class="opts">
+      
+      <label class="opt">
+        <input type="radio" name="q74" value="0" required
+                >
+        <i>A</i><span>1900</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q74" value="1" required
+                >
+        <i>B</i><span>2023</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q74" value="2" required
+                >
+        <i>C</i><span>2000</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q74" value="3" required
+                >
+        <i>D</i><span>2100</span>
+      </label>
+      
+    </div>
+  </fieldset>
+  
+  <fieldset class="qblock " data-h="6f740723" data-topic="15">
+    <a class="quiz-topic" href="mavzu-15-0.html">15-mavzu: if-else va if-elif-else konstruksiyalaridan foydalanish</a>
+    <legend class="quiz-q"><span class="qn">75</span>Tarif dasturida gb = 35 bo‘lsa, narx = 80000 + (gb - 30) * 3000 qiymati:</legend>
+    <div class="opts">
+      
+      <label class="opt">
+        <input type="radio" name="q75" value="0" required
+                >
+        <i>A</i><span>80000</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q75" value="1" required
+                >
+        <i>B</i><span>105000</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q75" value="2" required
+                >
+        <i>C</i><span>90000</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q75" value="3" required
+                >
+        <i>D</i><span>95000</span>
+      </label>
+      
+    </div>
+  </fieldset>
+  
+  <fieldset class="qblock " data-h="4f4f678d" data-topic="16">
+    <a class="quiz-topic" href="mavzu-16-0.html">16-mavzu: Takrorlash operatorlari: for va while</a>
+    <legend class="quiz-q"><span class="qn">76</span>for i in range(4): print(i) dasturi nechta son chiqaradi?</legend>
+    <div class="opts">
+      
+      <label class="opt">
+        <input type="radio" name="q76" value="0" required
+                >
+        <i>A</i><span>3</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q76" value="1" required
+                >
+        <i>B</i><span>5</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q76" value="2" required
+                >
+        <i>C</i><span>4</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q76" value="3" required
+                >
+        <i>D</i><span>0</span>
+      </label>
+      
+    </div>
+  </fieldset>
+  
+  <fieldset class="qblock " data-h="55711278" data-topic="16">
+    <a class="quiz-topic" href="mavzu-16-0.html">16-mavzu: Takrorlash operatorlari: for va while</a>
+    <legend class="quiz-q"><span class="qn">77</span>Takrorlar soni oldindan noma’lum bo‘lsa, qaysi sikl qulayroq?</legend>
+    <div class="opts">
+      
+      <label class="opt">
+        <input type="radio" name="q77" value="0" required
+                >
+        <i>A</i><span>while</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q77" value="1" required
+                >
+        <i>B</i><span>for</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q77" value="2" required
+                >
+        <i>C</i><span>if</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q77" value="3" required
+                >
+        <i>D</i><span>print</span>
+      </label>
+      
+    </div>
+  </fieldset>
+  
+  <fieldset class="qblock " data-h="8f4d0090" data-topic="16">
+    <a class="quiz-topic" href="mavzu-16-0.html">16-mavzu: Takrorlash operatorlari: for va while</a>
+    <legend class="quiz-q"><span class="qn">78</span>Cheksiz siklni to‘xtatish uchun qaysi tugmalar ishlatiladi?</legend>
+    <div class="opts">
+      
+      <label class="opt">
+        <input type="radio" name="q78" value="0" required
+                >
+        <i>A</i><span>Ctrl + S</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q78" value="1" required
+                >
+        <i>B</i><span>Alt + F4</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q78" value="2" required
+                >
+        <i>C</i><span>Ctrl + Z</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q78" value="3" required
+                >
+        <i>D</i><span>Ctrl + C</span>
+      </label>
+      
+    </div>
+  </fieldset>
+  
+  <fieldset class="qblock " data-h="acbf8a55" data-topic="16">
+    <a class="quiz-topic" href="mavzu-16-0.html">16-mavzu: Takrorlash operatorlari: for va while</a>
+    <legend class="quiz-q"><span class="qn">79</span>Sikl tanasining bir marta bajarilishi qanday ataladi?</legend>
+    <div class="opts">
+      
+      <label class="opt">
+        <input type="radio" name="q79" value="0" required
+                >
+        <i>A</i><span>Hisoblagich</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q79" value="1" required
+                >
+        <i>B</i><span>Iteratsiya</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q79" value="2" required
+                >
+        <i>C</i><span>Sikl sharti</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q79" value="3" required
+                >
+        <i>D</i><span>Chekinish</span>
+      </label>
+      
+    </div>
+  </fieldset>
+  
+  <fieldset class="qblock " data-h="bd389048" data-topic="16">
+    <a class="quiz-topic" href="mavzu-16-0.html">16-mavzu: Takrorlash operatorlari: for va while</a>
+    <legend class="quiz-q"><span class="qn">80</span>i = 1 bo‘lsa, while i &lt; 20: i *= 3 siklidan keyin i ning qiymati nechaga teng?</legend>
+    <div class="opts">
+      
+      <label class="opt">
+        <input type="radio" name="q80" value="0" required
+                >
+        <i>A</i><span>9</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q80" value="1" required
+                >
+        <i>B</i><span>20</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q80" value="2" required
+                >
+        <i>C</i><span>27</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q80" value="3" required
+                >
+        <i>D</i><span>81</span>
+      </label>
+      
+    </div>
+  </fieldset>
+  
+  <fieldset class="qblock " data-h="a4c60e62" data-topic="17">
+    <a class="quiz-topic" href="mavzu-17-0.html">17-mavzu: for takrorlash operatori bilan ishlash</a>
+    <legend class="quiz-q"><span class="qn">81</span>range(1, 10, 3) qanday sonlarni beradi?</legend>
+    <div class="opts">
+      
+      <label class="opt">
+        <input type="radio" name="q81" value="0" required
+                >
+        <i>A</i><span>1, 3, 6, 9</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q81" value="1" required
+                >
+        <i>B</i><span>1, 4, 7</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q81" value="2" required
+                >
+        <i>C</i><span>1, 4, 7, 10</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q81" value="3" required
+                >
+        <i>D</i><span>3, 6, 9</span>
+      </label>
+      
+    </div>
+  </fieldset>
+  
+  <fieldset class="qblock " data-h="06363776" data-topic="17">
+    <a class="quiz-topic" href="mavzu-17-0.html">17-mavzu: for takrorlash operatori bilan ishlash</a>
+    <legend class="quiz-q"><span class="qn">82</span>Yig‘indi hisoblovchi akkumulyatorning boshlang‘ich qiymati:</legend>
+    <div class="opts">
+      
+      <label class="opt">
+        <input type="radio" name="q82" value="0" required
+                >
+        <i>A</i><span>1</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q82" value="1" required
+                >
+        <i>B</i><span>-1</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q82" value="2" required
+                >
+        <i>C</i><span>0</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q82" value="3" required
+                >
+        <i>D</i><span>10</span>
+      </label>
+      
+    </div>
+  </fieldset>
+  
+  <fieldset class="qblock " data-h="fc14863f" data-topic="17">
+    <a class="quiz-topic" href="mavzu-17-0.html">17-mavzu: for takrorlash operatori bilan ishlash</a>
+    <legend class="quiz-q"><span class="qn">83</span>for i in range(3, 0, -1): print(i, end=&quot; &quot;) natijasi:</legend>
+    <div class="opts">
+      
+      <label class="opt">
+        <input type="radio" name="q83" value="0" required
+                >
+        <i>A</i><span>3 2 1</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q83" value="1" required
+                >
+        <i>B</i><span>0 1 2</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q83" value="2" required
+                >
+        <i>C</i><span>1 2 3</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q83" value="3" required
+                >
+        <i>D</i><span>3 2 1 0</span>
+      </label>
+      
+    </div>
+  </fieldset>
+  
+  <fieldset class="qblock " data-h="01c5374c" data-topic="17">
+    <a class="quiz-topic" href="mavzu-17-0.html">17-mavzu: for takrorlash operatori bilan ishlash</a>
+    <legend class="quiz-q"><span class="qn">84</span>s = 0 dan keyin for i in range(2, 11, 2): s += i sikli bajarilsa, s ning qiymati nechaga teng?</legend>
+    <div class="opts">
+      
+      <label class="opt">
+        <input type="radio" name="q84" value="0" required
+                >
+        <i>A</i><span>25</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q84" value="1" required
+                >
+        <i>B</i><span>55</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q84" value="2" required
+                >
+        <i>C</i><span>30</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q84" value="3" required
+                >
+        <i>D</i><span>20</span>
+      </label>
+      
+    </div>
+  </fieldset>
+  
+  <fieldset class="qblock " data-h="e952b566" data-topic="17">
+    <a class="quiz-topic" href="mavzu-17-0.html">17-mavzu: for takrorlash operatori bilan ishlash</a>
+    <legend class="quiz-q"><span class="qn">85</span>p = 1 dan keyin for i in range(1, 5): p *= i sikli bajarilsa, p ning qiymati nechaga teng?</legend>
+    <div class="opts">
+      
+      <label class="opt">
+        <input type="radio" name="q85" value="0" required
+                >
+        <i>A</i><span>120</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q85" value="1" required
+                >
+        <i>B</i><span>24</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q85" value="2" required
+                >
+        <i>C</i><span>10</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q85" value="3" required
+                >
+        <i>D</i><span>0</span>
+      </label>
+      
+    </div>
+  </fieldset>
+  
+  <fieldset class="qblock " data-h="6aea204a" data-topic="18">
+    <a class="quiz-topic" href="mavzu-18-0.html">18-mavzu: While takrorlash operatori bilan ishlash</a>
+    <legend class="quiz-q"><span class="qn">86</span>i = 5 bo‘lsa, while i &gt; 0: i -= 2 sikli necha marta bajariladi?</legend>
+    <div class="opts">
+      
+      <label class="opt">
+        <input type="radio" name="q86" value="0" required
+                >
+        <i>A</i><span>2</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q86" value="1" required
+                >
+        <i>B</i><span>5</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q86" value="2" required
+                >
+        <i>C</i><span>3</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q86" value="3" required
+                >
+        <i>D</i><span>Cheksiz</span>
+      </label>
+      
+    </div>
+  </fieldset>
+  
+  <fieldset class="qblock " data-h="3fa12bb0" data-topic="18">
+    <a class="quiz-topic" href="mavzu-18-0.html">18-mavzu: While takrorlash operatori bilan ishlash</a>
+    <legend class="quiz-q"><span class="qn">87</span>Siklni darhol to‘liq to‘xtatuvchi operator:</legend>
+    <div class="opts">
+      
+      <label class="opt">
+        <input type="radio" name="q87" value="0" required
+                >
+        <i>A</i><span>continue</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q87" value="1" required
+                >
+        <i>B</i><span>break</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q87" value="2" required
+                >
+        <i>C</i><span>pass</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q87" value="3" required
+                >
+        <i>D</i><span>stop</span>
+      </label>
+      
+    </div>
+  </fieldset>
+  
+  <fieldset class="qblock " data-h="c63c8453" data-topic="18">
+    <a class="quiz-topic" href="mavzu-18-0.html">18-mavzu: While takrorlash operatori bilan ishlash</a>
+    <legend class="quiz-q"><span class="qn">88</span>4725 % 10 ifodasining qiymati:</legend>
+    <div class="opts">
+      
+      <label class="opt">
+        <input type="radio" name="q88" value="0" required
+                >
+        <i>A</i><span>472</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q88" value="1" required
+                >
+        <i>B</i><span>4</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q88" value="2" required
+                >
+        <i>C</i><span>47</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q88" value="3" required
+                >
+        <i>D</i><span>5</span>
+      </label>
+      
+    </div>
+  </fieldset>
+  
+  <fieldset class="qblock " data-h="cc076494" data-topic="18">
+    <a class="quiz-topic" href="mavzu-18-0.html">18-mavzu: While takrorlash operatori bilan ishlash</a>
+    <legend class="quiz-q"><span class="qn">89</span>continue operatori nima qiladi?</legend>
+    <div class="opts">
+      
+      <label class="opt">
+        <input type="radio" name="q89" value="0" required
+                >
+        <i>A</i><span>Siklni butunlay to‘xtatadi</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q89" value="1" required
+                >
+        <i>B</i><span>Dasturni yopadi</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q89" value="2" required
+                >
+        <i>C</i><span>Sikl shartini o‘zgartiradi</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q89" value="3" required
+                >
+        <i>D</i><span>Joriy iteratsiyaning qolgan qismini tashlab, keyingi iteratsiyaga o‘tadi</span>
+      </label>
+      
+    </div>
+  </fieldset>
+  
+  <fieldset class="qblock " data-h="d266c28f" data-topic="18">
+    <a class="quiz-topic" href="mavzu-18-0.html">18-mavzu: While takrorlash operatori bilan ishlash</a>
+    <legend class="quiz-q"><span class="qn">90</span>s = 0, n = 305 bo‘lsa, while n &gt; 0: s += n % 10; n //= 10 siklidan keyin s ning qiymati nechaga teng?</legend>
+    <div class="opts">
+      
+      <label class="opt">
+        <input type="radio" name="q90" value="0" required
+                >
+        <i>A</i><span>8</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q90" value="1" required
+                >
+        <i>B</i><span>35</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q90" value="2" required
+                >
+        <i>C</i><span>305</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q90" value="3" required
+                >
+        <i>D</i><span>5</span>
+      </label>
+      
+    </div>
+  </fieldset>
+  
+  <fieldset class="qblock " data-h="dcc5a6b3" data-topic="19">
+    <a class="quiz-topic" href="mavzu-19-0.html">19-mavzu: Operatorlarni birgalikda qo‘llash va dastur tuzish</a>
+    <legend class="quiz-q"><span class="qn">91</span>10 - 2 * 3 ifodasining qiymati:</legend>
+    <div class="opts">
+      
+      <label class="opt">
+        <input type="radio" name="q91" value="0" required
+                >
+        <i>A</i><span>24</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q91" value="1" required
+                >
+        <i>B</i><span>4</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q91" value="2" required
+                >
+        <i>C</i><span>-4</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q91" value="3" required
+                >
+        <i>D</i><span>6</span>
+      </label>
+      
+    </div>
+  </fieldset>
+  
+  <fieldset class="qblock " data-h="7c184c45" data-topic="19">
+    <a class="quiz-topic" href="mavzu-19-0.html">19-mavzu: Operatorlarni birgalikda qo‘llash va dastur tuzish</a>
+    <legend class="quiz-q"><span class="qn">92</span>not (5 &gt; 3) ifodasining qiymati:</legend>
+    <div class="opts">
+      
+      <label class="opt">
+        <input type="radio" name="q92" value="0" required
+                >
+        <i>A</i><span>False</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q92" value="1" required
+                >
+        <i>B</i><span>True</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q92" value="2" required
+                >
+        <i>C</i><span>5</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q92" value="3" required
+                >
+        <i>D</i><span>Xato</span>
+      </label>
+      
+    </div>
+  </fieldset>
+  
+  <fieldset class="qblock " data-h="948ace2b" data-topic="19">
+    <a class="quiz-topic" href="mavzu-19-0.html">19-mavzu: Operatorlarni birgalikda qo‘llash va dastur tuzish</a>
+    <legend class="quiz-q"><span class="qn">93</span>Qaysi yil kabisa hisoblanmaydi?</legend>
+    <div class="opts">
+      
+      <label class="opt">
+        <input type="radio" name="q93" value="0" required
+                >
+        <i>A</i><span>2000</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q93" value="1" required
+                >
+        <i>B</i><span>2024</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q93" value="2" required
+                >
+        <i>C</i><span>1996</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q93" value="3" required
+                >
+        <i>D</i><span>1900</span>
+      </label>
+      
+    </div>
+  </fieldset>
+  
+  <fieldset class="qblock " data-h="15f36800" data-topic="19">
+    <a class="quiz-topic" href="mavzu-19-0.html">19-mavzu: Operatorlarni birgalikda qo‘llash va dastur tuzish</a>
+    <legend class="quiz-q"><span class="qn">94</span>Pythonda -3 2 ifodasining qiymati nechaga teng?**</legend>
+    <div class="opts">
+      
+      <label class="opt">
+        <input type="radio" name="q94" value="0" required
+                >
+        <i>A</i><span>9</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q94" value="1" required
+                >
+        <i>B</i><span>-9</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q94" value="2" required
+                >
+        <i>C</i><span>6</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q94" value="3" required
+                >
+        <i>D</i><span>-6</span>
+      </label>
+      
+    </div>
+  </fieldset>
+  
+  <fieldset class="qblock " data-h="c13d261a" data-topic="19">
+    <a class="quiz-topic" href="mavzu-19-0.html">19-mavzu: Operatorlarni birgalikda qo‘llash va dastur tuzish</a>
+    <legend class="quiz-q"><span class="qn">95</span>True or False and False ifodasining qiymati qanday?</legend>
+    <div class="opts">
+      
+      <label class="opt">
+        <input type="radio" name="q95" value="0" required
+                >
+        <i>A</i><span>False</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q95" value="1" required
+                >
+        <i>B</i><span>None</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q95" value="2" required
+                >
+        <i>C</i><span>True</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q95" value="3" required
+                >
+        <i>D</i><span>SyntaxError xatosi</span>
+      </label>
+      
+    </div>
+  </fieldset>
+  
+  <fieldset class="qblock " data-h="3ea5b9a3" data-topic="20">
+    <a class="quiz-topic" href="mavzu-20-0.html">20-mavzu: Shart va takrorlash operatorlarini birgalikda qo‘llash</a>
+    <legend class="quiz-q"><span class="qn">96</span>1 dan 10 gacha juft sonlar sonini sanash uchun qaysi shart kerak?</legend>
+    <div class="opts">
+      
+      <label class="opt">
+        <input type="radio" name="q96" value="0" required
+                >
+        <i>A</i><span>i % 2 == 1</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q96" value="1" required
+                >
+        <i>B</i><span>i // 2 == 0</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q96" value="2" required
+                >
+        <i>C</i><span>i % 2 == 0</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q96" value="3" required
+                >
+        <i>D</i><span>i / 2 == 0</span>
+      </label>
+      
+    </div>
+  </fieldset>
+  
+  <fieldset class="qblock " data-h="59183eaf" data-topic="20">
+    <a class="quiz-topic" href="mavzu-20-0.html">20-mavzu: Shart va takrorlash operatorlarini birgalikda qo‘llash</a>
+    <legend class="quiz-q"><span class="qn">97</span>Qaysi son tub?</legend>
+    <div class="opts">
+      
+      <label class="opt">
+        <input type="radio" name="q97" value="0" required
+                >
+        <i>A</i><span>21</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q97" value="1" required
+                >
+        <i>B</i><span>1</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q97" value="2" required
+                >
+        <i>C</i><span>27</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q97" value="3" required
+                >
+        <i>D</i><span>29</span>
+      </label>
+      
+    </div>
+  </fieldset>
+  
+  <fieldset class="qblock " data-h="fba81be7" data-topic="20">
+    <a class="quiz-topic" href="mavzu-20-0.html">20-mavzu: Shart va takrorlash operatorlarini birgalikda qo‘llash</a>
+    <legend class="quiz-q"><span class="qn">98</span>Menyuli dasturda while True siklidan chiqish uchun:</legend>
+    <div class="opts">
+      
+      <label class="opt">
+        <input type="radio" name="q98" value="0" required
+                >
+        <i>A</i><span>break</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q98" value="1" required
+                >
+        <i>B</i><span>continue</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q98" value="2" required
+                >
+        <i>C</i><span>else</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q98" value="3" required
+                >
+        <i>D</i><span>range</span>
+      </label>
+      
+    </div>
+  </fieldset>
+  
+  <fieldset class="qblock " data-h="03c9c9f8" data-topic="20">
+    <a class="quiz-topic" href="mavzu-20-0.html">20-mavzu: Shart va takrorlash operatorlarini birgalikda qo‘llash</a>
+    <legend class="quiz-q"><span class="qn">99</span>k = 0 bo‘lsa, for i in range(1, 11): siklida if i % 4 == 0: k += 1 bajarilsa, k ning yakuniy qiymati nechaga teng?</legend>
+    <div class="opts">
+      
+      <label class="opt">
+        <input type="radio" name="q99" value="0" required
+                >
+        <i>A</i><span>2</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q99" value="1" required
+                >
+        <i>B</i><span>3</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q99" value="2" required
+                >
+        <i>C</i><span>4</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q99" value="3" required
+                >
+        <i>D</i><span>10</span>
+      </label>
+      
+    </div>
+  </fieldset>
+  
+  <fieldset class="qblock " data-h="9625c9a7" data-topic="20">
+    <a class="quiz-topic" href="mavzu-20-0.html">20-mavzu: Shart va takrorlash operatorlarini birgalikda qo‘llash</a>
+    <legend class="quiz-q"><span class="qn">100</span>Eng katta qiymatni topishda boshlang‘ich qiymat sifatida nega 0 emas, birinchi kiritilgan son olinadi?</legend>
+    <div class="opts">
+      
+      <label class="opt">
+        <input type="radio" name="q100" value="0" required
+                >
+        <i>A</i><span>0 ni int turiga o‘tkazib bo‘lmaydi</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q100" value="1" required
+                >
+        <i>B</i><span>Python 0 bilan taqqoslay olmaydi</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q100" value="2" required
+                >
+        <i>C</i><span>Barcha sonlar manfiy bo‘lsa, 0 noto‘g‘ri javob bo‘lib qoladi</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q100" value="3" required
+                >
+        <i>D</i><span>Dastur xotirani kamroq ishlatadi</span>
+      </label>
+      
+    </div>
+  </fieldset>
+  
+  <fieldset class="qblock " data-h="8e5ae640" data-topic="21">
+    <a class="quiz-topic" href="mavzu-21-0.html">21-mavzu: Operatorlar yordamida oddiy hisoblash masalalarini yechish</a>
+    <legend class="quiz-q"><span class="qn">101</span>Matematikadagi x² Python tilida qanday yoziladi?</legend>
+    <div class="opts">
+      
+      <label class="opt">
+        <input type="radio" name="q101" value="0" required
+                >
+        <i>A</i><span>x ^ 2</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q101" value="1" required
+                >
+        <i>B</i><span>x * 2</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q101" value="2" required
+                >
+        <i>C</i><span>x ** 2</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q101" value="3" required
+                >
+        <i>D</i><span>sqrt(x)</span>
+      </label>
+      
+    </div>
+  </fieldset>
+  
+  <fieldset class="qblock " data-h="ed370e97" data-topic="21">
+    <a class="quiz-topic" href="mavzu-21-0.html">21-mavzu: Operatorlar yordamida oddiy hisoblash masalalarini yechish</a>
+    <legend class="quiz-q"><span class="qn">102</span>sek = 3725 bo‘lsa, sek % 60 qiymati:</legend>
+    <div class="opts">
+      
+      <label class="opt">
+        <input type="radio" name="q102" value="0" required
+                >
+        <i>A</i><span>5</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q102" value="1" required
+                >
+        <i>B</i><span>2</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q102" value="2" required
+                >
+        <i>C</i><span>62</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q102" value="3" required
+                >
+        <i>D</i><span>1</span>
+      </label>
+      
+    </div>
+  </fieldset>
+  
+  <fieldset class="qblock " data-h="f995f5e1" data-topic="21">
+    <a class="quiz-topic" href="mavzu-21-0.html">21-mavzu: Operatorlar yordamida oddiy hisoblash masalalarini yechish</a>
+    <legend class="quiz-q"><span class="qn">103</span>import math yozilmasdan sqrt(16) chaqirilsa qaysi xato chiqadi?</legend>
+    <div class="opts">
+      
+      <label class="opt">
+        <input type="radio" name="q103" value="0" required
+                >
+        <i>A</i><span>SyntaxError</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q103" value="1" required
+                >
+        <i>B</i><span>ZeroDivisionError</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q103" value="2" required
+                >
+        <i>C</i><span>TypeError</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q103" value="3" required
+                >
+        <i>D</i><span>NameError</span>
+      </label>
+      
+    </div>
+  </fieldset>
+  
+  <fieldset class="qblock " data-h="dbb2723e" data-topic="21">
+    <a class="quiz-topic" href="mavzu-21-0.html">21-mavzu: Operatorlar yordamida oddiy hisoblash masalalarini yechish</a>
+    <legend class="quiz-q"><span class="qn">104</span>-5 2 ifodasining natijasi:**</legend>
+    <div class="opts">
+      
+      <label class="opt">
+        <input type="radio" name="q104" value="0" required
+                >
+        <i>A</i><span>25</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q104" value="1" required
+                >
+        <i>B</i><span>-25</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q104" value="2" required
+                >
+        <i>C</i><span>10</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q104" value="3" required
+                >
+        <i>D</i><span>-10</span>
+      </label>
+      
+    </div>
+  </fieldset>
+  
+  <fieldset class="qblock " data-h="f2e7bfa4" data-topic="21">
+    <a class="quiz-topic" href="mavzu-21-0.html">21-mavzu: Operatorlar yordamida oddiy hisoblash masalalarini yechish</a>
+    <legend class="quiz-q"><span class="qn">105</span>700 MB faylni 20 Mbit/s tezlikda yuklash necha soniya davom etadi?</legend>
+    <div class="opts">
+      
+      <label class="opt">
+        <input type="radio" name="q105" value="0" required
+                >
+        <i>A</i><span>35</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q105" value="1" required
+                >
+        <i>B</i><span>140</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q105" value="2" required
+                >
+        <i>C</i><span>280</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q105" value="3" required
+                >
+        <i>D</i><span>560</span>
+      </label>
+      
+    </div>
+  </fieldset>
+  
+  <fieldset class="qblock " data-h="30c3b408" data-topic="22">
+    <a class="quiz-topic" href="mavzu-22-0.html">22-mavzu: Dasturlashdagi sintaktik va mantiqiy xatolar</a>
+    <legend class="quiz-q"><span class="qn">106</span>Dastur xabarsiz ishlab, noto‘g‘ri natija bersa, bu qanday xato?</legend>
+    <div class="opts">
+      
+      <label class="opt">
+        <input type="radio" name="q106" value="0" required
+                >
+        <i>A</i><span>Sintaktik</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q106" value="1" required
+                >
+        <i>B</i><span>Mantiqiy</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q106" value="2" required
+                >
+        <i>C</i><span>IndentationError</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q106" value="3" required
+                >
+        <i>D</i><span>ZeroDivisionError</span>
+      </label>
+      
+    </div>
+  </fieldset>
+  
+  <fieldset class="qblock " data-h="bd4a7442" data-topic="22">
+    <a class="quiz-topic" href="mavzu-22-0.html">22-mavzu: Dasturlashdagi sintaktik va mantiqiy xatolar</a>
+    <legend class="quiz-q"><span class="qn">107</span>print(100 / 0) qatori qaysi xatoni chiqaradi?</legend>
+    <div class="opts">
+      
+      <label class="opt">
+        <input type="radio" name="q107" value="0" required
+                >
+        <i>A</i><span>ValueError</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q107" value="1" required
+                >
+        <i>B</i><span>TypeError</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q107" value="2" required
+                >
+        <i>C</i><span>ZeroDivisionError</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q107" value="3" required
+                >
+        <i>D</i><span>SyntaxError</span>
+      </label>
+      
+    </div>
+  </fieldset>
+  
+  <fieldset class="qblock " data-h="6ee47375" data-topic="22">
+    <a class="quiz-topic" href="mavzu-22-0.html">22-mavzu: Dasturlashdagi sintaktik va mantiqiy xatolar</a>
+    <legend class="quiz-q"><span class="qn">108</span>Traceback xabarida eng muhim ma’lumot — xato turi — qayerda joylashadi?</legend>
+    <div class="opts">
+      
+      <label class="opt">
+        <input type="radio" name="q108" value="0" required
+                >
+        <i>A</i><span>Oxirgi qatorda</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q108" value="1" required
+                >
+        <i>B</i><span>Birinchi qatorda</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q108" value="2" required
+                >
+        <i>C</i><span>Fayl nomida</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q108" value="3" required
+                >
+        <i>D</i><span>Ko‘rsatilmaydi</span>
+      </label>
+      
+    </div>
+  </fieldset>
+  
+  <fieldset class="qblock " data-h="8756f55b" data-topic="22">
+    <a class="quiz-topic" href="mavzu-22-0.html">22-mavzu: Dasturlashdagi sintaktik va mantiqiy xatolar</a>
+    <legend class="quiz-q"><span class="qn">109</span>int(&quot;12a&quot;) qanday xato beradi?</legend>
+    <div class="opts">
+      
+      <label class="opt">
+        <input type="radio" name="q109" value="0" required
+                >
+        <i>A</i><span>NameError</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q109" value="1" required
+                >
+        <i>B</i><span>ZeroDivisionError</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q109" value="2" required
+                >
+        <i>C</i><span>IndentationError</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q109" value="3" required
+                >
+        <i>D</i><span>ValueError</span>
+      </label>
+      
+    </div>
+  </fieldset>
+  
+  <fieldset class="qblock " data-h="65f76cdf" data-topic="22">
+    <a class="quiz-topic" href="mavzu-22-0.html">22-mavzu: Dasturlashdagi sintaktik va mantiqiy xatolar</a>
+    <legend class="quiz-q"><span class="qn">110</span>Dastur boshida print(&quot;Boshlandi&quot;) bor, 3-qatorda esa ikki nuqtasiz if. Ishga tushirilganda nima chiqadi?</legend>
+    <div class="opts">
+      
+      <label class="opt">
+        <input type="radio" name="q110" value="0" required
+                >
+        <i>A</i><span>Boshlandi va xato xabari</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q110" value="1" required
+                >
+        <i>B</i><span>Faqat SyntaxError xabari</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q110" value="2" required
+                >
+        <i>C</i><span>Faqat Boshlandi</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q110" value="3" required
+                >
+        <i>D</i><span>Hech narsa</span>
+      </label>
+      
+    </div>
+  </fieldset>
+  
+  <fieldset class="qblock " data-h="5b71794b" data-topic="23">
+    <a class="quiz-topic" href="mavzu-23-0.html">23-mavzu: Sintaktik xatolarni aniqlash va tuzatish</a>
+    <legend class="quiz-q"><span class="qn">111</span>«while True» qatori qaysi xabarni beradi?</legend>
+    <div class="opts">
+      
+      <label class="opt">
+        <input type="radio" name="q111" value="0" required
+                >
+        <i>A</i><span>SyntaxError: expected &#x27;:&#x27;</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q111" value="1" required
+                >
+        <i>B</i><span>NameError</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q111" value="2" required
+                >
+        <i>C</i><span>IndentationError: unexpected indent</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q111" value="3" required
+                >
+        <i>D</i><span>TypeError</span>
+      </label>
+      
+    </div>
+  </fieldset>
+  
+  <fieldset class="qblock " data-h="1c958354" data-topic="23">
+    <a class="quiz-topic" href="mavzu-23-0.html">23-mavzu: Sintaktik xatolarni aniqlash va tuzatish</a>
+    <legend class="quiz-q"><span class="qn">112</span>SyntaxError: &#x27;(&#x27; was never closed xabari nimani bildiradi?</legend>
+    <div class="opts">
+      
+      <label class="opt">
+        <input type="radio" name="q112" value="0" required
+                >
+        <i>A</i><span>Qo‘shtirnoq yopilmagan</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q112" value="1" required
+                >
+        <i>B</i><span>Ikki nuqta yo‘q</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q112" value="2" required
+                >
+        <i>C</i><span>Ochilgan qavs yopilmagan</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q112" value="3" required
+                >
+        <i>D</i><span>Nolga bo‘lingan</span>
+      </label>
+      
+    </div>
+  </fieldset>
+  
+  <fieldset class="qblock " data-h="0222fe48" data-topic="23">
+    <a class="quiz-topic" href="mavzu-23-0.html">23-mavzu: Sintaktik xatolarni aniqlash va tuzatish</a>
+    <legend class="quiz-q"><span class="qn">113</span>print(&#x27;Bu o‘quvchi&#x27;) qatoridagi xatoni qanday tuzatish mumkin?</legend>
+    <div class="opts">
+      
+      <label class="opt">
+        <input type="radio" name="q113" value="0" required
+                >
+        <i>A</i><span>print(Bu o‘quvchi)</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q113" value="1" required
+                >
+        <i>B</i><span>print(&#x27;Bu o‘quvchi)</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q113" value="2" required
+                >
+        <i>C</i><span>Print(&#x27;Bu o‘quvchi&#x27;)</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q113" value="3" required
+                >
+        <i>D</i><span>print(&quot;Bu o‘quvchi&quot;)</span>
+      </label>
+      
+    </div>
+  </fieldset>
+  
+  <fieldset class="qblock " data-h="a142eceb" data-topic="23">
+    <a class="quiz-topic" href="mavzu-23-0.html">23-mavzu: Sintaktik xatolarni aniqlash va tuzatish</a>
+    <legend class="quiz-q"><span class="qn">114</span>Hech qanday blok ichida bo‘lmagan qator bo‘shliq bilan boshlansa, qaysi xabar chiqadi?</legend>
+    <div class="opts">
+      
+      <label class="opt">
+        <input type="radio" name="q114" value="0" required
+                >
+        <i>A</i><span>SyntaxError: expected &#x27;:&#x27;</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q114" value="1" required
+                >
+        <i>B</i><span>IndentationError: unexpected indent</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q114" value="2" required
+                >
+        <i>C</i><span>NameError</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q114" value="3" required
+                >
+        <i>D</i><span>ValueError</span>
+      </label>
+      
+    </div>
+  </fieldset>
+  
+  <fieldset class="qblock " data-h="18e4d56d" data-topic="23">
+    <a class="quiz-topic" href="mavzu-23-0.html">23-mavzu: Sintaktik xatolarni aniqlash va tuzatish</a>
+    <legend class="quiz-q"><span class="qn">115</span>IDLE da dasturni bajarmasdan sintaksisini tekshiruvchi buyruq:</legend>
+    <div class="opts">
+      
+      <label class="opt">
+        <input type="radio" name="q115" value="0" required
+                >
+        <i>A</i><span>Run → Run Module (F5)</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q115" value="1" required
+                >
+        <i>B</i><span>File → Save (Ctrl + S)</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q115" value="2" required
+                >
+        <i>C</i><span>Run → Check Module (Alt + X)</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q115" value="3" required
+                >
+        <i>D</i><span>Edit → Undo (Ctrl + Z)</span>
+      </label>
+      
+    </div>
+  </fieldset>
+  
+  <fieldset class="qblock " data-h="bb08aea9" data-topic="24">
+    <a class="quiz-topic" href="mavzu-24-0.html">24-mavzu: Mantiqiy xatolarni topish va tahlil qilish</a>
+    <legend class="quiz-q"><span class="qn">116</span>Mantiqiy xatoli dastur ishga tushirilganda nima bo‘ladi?</legend>
+    <div class="opts">
+      
+      <label class="opt">
+        <input type="radio" name="q116" value="0" required
+                >
+        <i>A</i><span>SyntaxError chiqadi</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q116" value="1" required
+                >
+        <i>B</i><span>Dastur ishlaydi, lekin natija noto‘g‘ri</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q116" value="2" required
+                >
+        <i>C</i><span>Dastur umuman ishga tushmaydi</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q116" value="3" required
+                >
+        <i>D</i><span>Traceback chiqadi</span>
+      </label>
+      
+    </div>
+  </fieldset>
+  
+  <fieldset class="qblock " data-h="be9658d7" data-topic="24">
+    <a class="quiz-topic" href="mavzu-24-0.html">24-mavzu: Mantiqiy xatolarni topish va tahlil qilish</a>
+    <legend class="quiz-q"><span class="qn">117</span>n = 10 bo‘lsa, for i in range(2, n, 2) siklida i qaysi qiymatlarni oladi?</legend>
+    <div class="opts">
+      
+      <label class="opt">
+        <input type="radio" name="q117" value="0" required
+                >
+        <i>A</i><span>2, 4, 6, 8, 10</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q117" value="1" required
+                >
+        <i>B</i><span>0, 2, 4, 6, 8</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q117" value="2" required
+                >
+        <i>C</i><span>2, 4, 6, 8</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q117" value="3" required
+                >
+        <i>D</i><span>1, 3, 5, 7, 9</span>
+      </label>
+      
+    </div>
+  </fieldset>
+  
+  <fieldset class="qblock " data-h="5eb6490d" data-topic="24">
+    <a class="quiz-topic" href="mavzu-24-0.html">24-mavzu: Mantiqiy xatolarni topish va tahlil qilish</a>
+    <legend class="quiz-q"><span class="qn">118</span>t = 39 bo‘lsa, t &gt;= 36 or t &lt;= 37 shartining qiymati:</legend>
+    <div class="opts">
+      
+      <label class="opt">
+        <input type="radio" name="q118" value="0" required
+                >
+        <i>A</i><span>False</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q118" value="1" required
+                >
+        <i>B</i><span>Xato beradi</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q118" value="2" required
+                >
+        <i>C</i><span>None</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q118" value="3" required
+                >
+        <i>D</i><span>True</span>
+      </label>
+      
+    </div>
+  </fieldset>
+  
+  <fieldset class="qblock " data-h="32301ff3" data-topic="24">
+    <a class="quiz-topic" href="mavzu-24-0.html">24-mavzu: Mantiqiy xatolarni topish va tahlil qilish</a>
+    <legend class="quiz-q"><span class="qn">119</span>Thonny muhitida dasturni bir qadam bajarish (Step over) tugmasi:</legend>
+    <div class="opts">
+      
+      <label class="opt">
+        <input type="radio" name="q119" value="0" required
+                >
+        <i>A</i><span>F6</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q119" value="1" required
+                >
+        <i>B</i><span>F1</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q119" value="2" required
+                >
+        <i>C</i><span>Ctrl + S</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q119" value="3" required
+                >
+        <i>D</i><span>Alt + F4</span>
+      </label>
+      
+    </div>
+  </fieldset>
+  
+  <fieldset class="qblock " data-h="f4b184f5" data-topic="24">
+    <a class="quiz-topic" href="mavzu-24-0.html">24-mavzu: Mantiqiy xatolarni topish va tahlil qilish</a>
+    <legend class="quiz-q"><span class="qn">120</span>(4 + 5 + 5) // 3 ifodasining natijasi:</legend>
+    <div class="opts">
+      
+      <label class="opt">
+        <input type="radio" name="q120" value="0" required
+                >
+        <i>A</i><span>4.67</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q120" value="1" required
+                >
+        <i>B</i><span>5</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q120" value="2" required
+                >
+        <i>C</i><span>4</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q120" value="3" required
+                >
+        <i>D</i><span>4.0</span>
+      </label>
+      
+    </div>
+  </fieldset>
+  
+  <fieldset class="qblock " data-h="fd1065f3" data-topic="25">
+    <a class="quiz-topic" href="mavzu-25-0.html">25-mavzu: Dasturlardagi mantiqiy xatolar</a>
+    <legend class="quiz-q"><span class="qn">121</span>a = 4, b = 6 bo‘lsa, print(a + b / 2) nima chiqaradi?</legend>
+    <div class="opts">
+      
+      <label class="opt">
+        <input type="radio" name="q121" value="0" required
+                >
+        <i>A</i><span>5.0</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q121" value="1" required
+                >
+        <i>B</i><span>7.0</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q121" value="2" required
+                >
+        <i>C</i><span>5</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q121" value="3" required
+                >
+        <i>D</i><span>10.0</span>
+      </label>
+      
+    </div>
+  </fieldset>
+  
+  <fieldset class="qblock " data-h="996306cc" data-topic="25">
+    <a class="quiz-topic" href="mavzu-25-0.html">25-mavzu: Dasturlardagi mantiqiy xatolar</a>
+    <legend class="quiz-q"><span class="qn">122</span>1 dan 10 gacha sonlar yig‘indisini for i in range(1, 10) bilan hisoblaganda qanday xato yuz beradi?</legend>
+    <div class="opts">
+      
+      <label class="opt">
+        <input type="radio" name="q122" value="0" required
+                >
+        <i>A</i><span>SyntaxError chiqadi</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q122" value="1" required
+                >
+        <i>B</i><span>1 soni qo‘shilmaydi</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q122" value="2" required
+                >
+        <i>C</i><span>Cheksiz sikl hosil bo‘ladi</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q122" value="3" required
+                >
+        <i>D</i><span>10 soni qo‘shilmay qoladi</span>
+      </label>
+      
+    </div>
+  </fieldset>
+  
+  <fieldset class="qblock " data-h="b3d58bd8" data-topic="25">
+    <a class="quiz-topic" href="mavzu-25-0.html">25-mavzu: Dasturlardagi mantiqiy xatolar</a>
+    <legend class="quiz-q"><span class="qn">123</span>x = 7 bo‘lsa, if x == 5 or 6: sharti qanday baholanadi?</legend>
+    <div class="opts">
+      
+      <label class="opt">
+        <input type="radio" name="q123" value="0" required
+                >
+        <i>A</i><span>Yolg‘on</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q123" value="1" required
+                >
+        <i>B</i><span>SyntaxError</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q123" value="2" required
+                >
+        <i>C</i><span>Rost</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q123" value="3" required
+                >
+        <i>D</i><span>TypeError</span>
+      </label>
+      
+    </div>
+  </fieldset>
+  
+  <fieldset class="qblock " data-h="373e28d3" data-topic="25">
+    <a class="quiz-topic" href="mavzu-25-0.html">25-mavzu: Dasturlardagi mantiqiy xatolar</a>
+    <legend class="quiz-q"><span class="qn">124</span>Sonlar ko‘paytmasini hisoblashda p = 0 deb boshlansa, natija qanday bo‘ladi?</legend>
+    <div class="opts">
+      
+      <label class="opt">
+        <input type="radio" name="q124" value="0" required
+                >
+        <i>A</i><span>Har doim 0</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q124" value="1" required
+                >
+        <i>B</i><span>Har doim 1</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q124" value="2" required
+                >
+        <i>C</i><span>To‘g‘ri natija</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q124" value="3" required
+                >
+        <i>D</i><span>Xato xabari chiqadi</span>
+      </label>
+      
+    </div>
+  </fieldset>
+  
+  <fieldset class="qblock " data-h="e087e3c7" data-topic="25">
+    <a class="quiz-topic" href="mavzu-25-0.html">25-mavzu: Dasturlardagi mantiqiy xatolar</a>
+    <legend class="quiz-q"><span class="qn">125</span>a = input() va b = input() ga 2 va 3 kiritilib, print(a + b) bajarilsa nima chiqadi?</legend>
+    <div class="opts">
+      
+      <label class="opt">
+        <input type="radio" name="q125" value="0" required
+                >
+        <i>A</i><span>5</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q125" value="1" required
+                >
+        <i>B</i><span>23</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q125" value="2" required
+                >
+        <i>C</i><span>6</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q125" value="3" required
+                >
+        <i>D</i><span>TypeError</span>
+      </label>
+      
+    </div>
+  </fieldset>
+  
+  <fieldset class="qblock " data-h="5ef078e3" data-topic="26">
+    <a class="quiz-topic" href="mavzu-26-0.html">26-mavzu: Xatolarni tuzatish va dastur ishlashini tekshirish</a>
+    <legend class="quiz-q"><span class="qn">126</span>Thonny da joriy satrni bajarib, keyingi satrga o‘tuvchi Step over buyrug‘ining tugmasi qaysi?</legend>
+    <div class="opts">
+      
+      <label class="opt">
+        <input type="radio" name="q126" value="0" required
+                >
+        <i>A</i><span>F5</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q126" value="1" required
+                >
+        <i>B</i><span>F9</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q126" value="2" required
+                >
+        <i>C</i><span>F6</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q126" value="3" required
+                >
+        <i>D</i><span>F2</span>
+      </label>
+      
+    </div>
+  </fieldset>
+  
+  <fieldset class="qblock " data-h="7a62ff82" data-topic="26">
+    <a class="quiz-topic" href="mavzu-26-0.html">26-mavzu: Xatolarni tuzatish va dastur ishlashini tekshirish</a>
+    <legend class="quiz-q"><span class="qn">127</span>int(&quot;abc&quot;) bajarilganda qanday xato yuz beradi?</legend>
+    <div class="opts">
+      
+      <label class="opt">
+        <input type="radio" name="q127" value="0" required
+                >
+        <i>A</i><span>ValueError</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q127" value="1" required
+                >
+        <i>B</i><span>SyntaxError</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q127" value="2" required
+                >
+        <i>C</i><span>ZeroDivisionError</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q127" value="3" required
+                >
+        <i>D</i><span>IndentationError</span>
+      </label>
+      
+    </div>
+  </fieldset>
+  
+  <fieldset class="qblock " data-h="1cf2dcba" data-topic="26">
+    <a class="quiz-topic" href="mavzu-26-0.html">26-mavzu: Xatolarni tuzatish va dastur ishlashini tekshirish</a>
+    <legend class="quiz-q"><span class="qn">128</span>Tuzatishdan so‘ng ilgari to‘g‘ri ishlagan qiymatlar bilan dasturni qayta tekshirish nima deyiladi?</legend>
+    <div class="opts">
+      
+      <label class="opt">
+        <input type="radio" name="q128" value="0" required
+                >
+        <i>A</i><span>Kompilyatsiya</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q128" value="1" required
+                >
+        <i>B</i><span>Formatlash</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q128" value="2" required
+                >
+        <i>C</i><span>Optimallashtirish</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q128" value="3" required
+                >
+        <i>D</i><span>Regressiya testi</span>
+      </label>
+      
+    </div>
+  </fieldset>
+  
+  <fieldset class="qblock " data-h="25148acb" data-topic="26">
+    <a class="quiz-topic" href="mavzu-26-0.html">26-mavzu: Xatolarni tuzatish va dastur ishlashini tekshirish</a>
+    <legend class="quiz-q"><span class="qn">129</span>assert operatoridagi shart yolg‘on bo‘lsa nima bo‘ladi?</legend>
+    <div class="opts">
+      
+      <label class="opt">
+        <input type="radio" name="q129" value="0" required
+                >
+        <i>A</i><span>Shart e’tiborsiz qoldiriladi</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q129" value="1" required
+                >
+        <i>B</i><span>Dastur AssertionError bilan to‘xtaydi</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q129" value="2" required
+                >
+        <i>C</i><span>Dastur boshidan qayta ishlaydi</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q129" value="3" required
+                >
+        <i>D</i><span>Ekranga True chiqadi</span>
+      </label>
+      
+    </div>
+  </fieldset>
+  
+  <fieldset class="qblock " data-h="dd834f88" data-topic="26">
+    <a class="quiz-topic" href="mavzu-26-0.html">26-mavzu: Xatolarni tuzatish va dastur ishlashini tekshirish</a>
+    <legend class="quiz-q"><span class="qn">130</span>Sonning oxirgi raqamini ajratib olish uchun qaysi ifoda to‘g‘ri?</legend>
+    <div class="opts">
+      
+      <label class="opt">
+        <input type="radio" name="q130" value="0" required
+                >
+        <i>A</i><span>n // 10</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q130" value="1" required
+                >
+        <i>B</i><span>n / 10</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q130" value="2" required
+                >
+        <i>C</i><span>n % 10</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q130" value="3" required
+                >
+        <i>D</i><span>n * 10</span>
+      </label>
+      
+    </div>
+  </fieldset>
+  
+  <fieldset class="qblock " data-h="c310ca7c" data-topic="27">
+    <a class="quiz-topic" href="mavzu-27-0.html">27-mavzu: Masalaga mos algoritm tuzish va blok-sxema ishlab chiqish</a>
+    <legend class="quiz-q"><span class="qn">131</span>Blok-sxemada shart tekshirish qaysi shakl bilan ifodalanadi?</legend>
+    <div class="opts">
+      
+      <label class="opt">
+        <input type="radio" name="q131" value="0" required
+                >
+        <i>A</i><span>Oval</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q131" value="1" required
+                >
+        <i>B</i><span>Parallelogramm</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q131" value="2" required
+                >
+        <i>C</i><span>To‘rtburchak</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q131" value="3" required
+                >
+        <i>D</i><span>Romb</span>
+      </label>
+      
+    </div>
+  </fieldset>
+  
+  <fieldset class="qblock " data-h="2480f390" data-topic="27">
+    <a class="quiz-topic" href="mavzu-27-0.html">27-mavzu: Masalaga mos algoritm tuzish va blok-sxema ishlab chiqish</a>
+    <legend class="quiz-q"><span class="qn">132</span>Ma’lumot kiritish va natijani chiqarish bloki qaysi shaklda chiziladi?</legend>
+    <div class="opts">
+      
+      <label class="opt">
+        <input type="radio" name="q132" value="0" required
+                >
+        <i>A</i><span>Parallelogramm</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q132" value="1" required
+                >
+        <i>B</i><span>Romb</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q132" value="2" required
+                >
+        <i>C</i><span>Oval</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q132" value="3" required
+                >
+        <i>D</i><span>Doira</span>
+      </label>
+      
+    </div>
+  </fieldset>
+  
+  <fieldset class="qblock " data-h="1b5f43ec" data-topic="27">
+    <a class="quiz-topic" href="mavzu-27-0.html">27-mavzu: Masalaga mos algoritm tuzish va blok-sxema ishlab chiqish</a>
+    <legend class="quiz-q"><span class="qn">133</span>Algoritm tuzishda birinchi navbatda nima qilinadi?</legend>
+    <div class="opts">
+      
+      <label class="opt">
+        <input type="radio" name="q133" value="0" required
+                >
+        <i>A</i><span>Python kodi yoziladi</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q133" value="1" required
+                >
+        <i>B</i><span>Masala shartidan berilganlar va natija aniqlanadi</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q133" value="2" required
+                >
+        <i>C</i><span>Dastur ishga tushiriladi</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q133" value="3" required
+                >
+        <i>D</i><span>Blok-sxema bezatiladi</span>
+      </label>
+      
+    </div>
+  </fieldset>
+  
+  <fieldset class="qblock " data-h="220ff68c" data-topic="27">
+    <a class="quiz-topic" href="mavzu-27-0.html">27-mavzu: Masalaga mos algoritm tuzish va blok-sxema ishlab chiqish</a>
+    <legend class="quiz-q"><span class="qn">134</span>Ta’mirlash narxi misolida soat = 2 va mijoz doimiy bo‘lsa, to‘lov qancha?</legend>
+    <div class="opts">
+      
+      <label class="opt">
+        <input type="radio" name="q134" value="0" required
+                >
+        <i>A</i><span>130 000 so‘m</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q134" value="1" required
+                >
+        <i>B</i><span>90 000 so‘m</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q134" value="2" required
+                >
+        <i>C</i><span>117 000 so‘m</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q134" value="3" required
+                >
+        <i>D</i><span>120 000 so‘m</span>
+      </label>
+      
+    </div>
+  </fieldset>
+  
+  <fieldset class="qblock " data-h="089d7313" data-topic="27">
+    <a class="quiz-topic" href="mavzu-27-0.html">27-mavzu: Masalaga mos algoritm tuzish va blok-sxema ishlab chiqish</a>
+    <legend class="quiz-q"><span class="qn">135</span>Boshlanish va tugash bloklari qaysi shaklda chiziladi?</legend>
+    <div class="opts">
+      
+      <label class="opt">
+        <input type="radio" name="q135" value="0" required
+                >
+        <i>A</i><span>Romb</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q135" value="1" required
+                >
+        <i>B</i><span>Parallelogramm</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q135" value="2" required
+                >
+        <i>C</i><span>Oval</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q135" value="3" required
+                >
+        <i>D</i><span>To‘rtburchak</span>
+      </label>
+      
+    </div>
+  </fieldset>
+  
+  <fieldset class="qblock " data-h="8b34df8a" data-topic="28">
+    <a class="quiz-topic" href="mavzu-28-0.html">28-mavzu: Tuzilgan algoritmni Python dasturiga aylantirish</a>
+    <legend class="quiz-q"><span class="qn">136</span>Blok-sxemadagi parallelogramm (kiritish) bloki Python da qaysi funksiya bilan yoziladi?</legend>
+    <div class="opts">
+      
+      <label class="opt">
+        <input type="radio" name="q136" value="0" required
+                >
+        <i>A</i><span>print()</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q136" value="1" required
+                >
+        <i>B</i><span>range()</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q136" value="2" required
+                >
+        <i>C</i><span>input()</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q136" value="3" required
+                >
+        <i>D</i><span>round()</span>
+      </label>
+      
+    </div>
+  </fieldset>
+  
+  <fieldset class="qblock " data-h="60ebec83" data-topic="28">
+    <a class="quiz-topic" href="mavzu-28-0.html">28-mavzu: Tuzilgan algoritmni Python dasturiga aylantirish</a>
+    <legend class="quiz-q"><span class="qn">137</span>Qaytish strelkasi bo‘lgan shart bloki Python da qanday ifodalanadi?</legend>
+    <div class="opts">
+      
+      <label class="opt">
+        <input type="radio" name="q137" value="0" required
+                >
+        <i>A</i><span>for yoki while sikli</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q137" value="1" required
+                >
+        <i>B</i><span>Faqat print()</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q137" value="2" required
+                >
+        <i>C</i><span>import buyrug‘i</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q137" value="3" required
+                >
+        <i>D</i><span>Oddiy qiymat berish</span>
+      </label>
+      
+    </div>
+  </fieldset>
+  
+  <fieldset class="qblock " data-h="e6874393" data-topic="28">
+    <a class="quiz-topic" href="mavzu-28-0.html">28-mavzu: Tuzilgan algoritmni Python dasturiga aylantirish</a>
+    <legend class="quiz-q"><span class="qn">138</span>&quot;HA&quot;.lower() ifodasining natijasi qanday?</legend>
+    <div class="opts">
+      
+      <label class="opt">
+        <input type="radio" name="q138" value="0" required
+                >
+        <i>A</i><span>&quot;HA&quot;</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q138" value="1" required
+                >
+        <i>B</i><span>&quot;Ha&quot;</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q138" value="2" required
+                >
+        <i>C</i><span>True</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q138" value="3" required
+                >
+        <i>D</i><span>&quot;ha&quot;</span>
+      </label>
+      
+    </div>
+  </fieldset>
+  
+  <fieldset class="qblock " data-h="ee5226fa" data-topic="28">
+    <a class="quiz-topic" href="mavzu-28-0.html">28-mavzu: Tuzilgan algoritmni Python dasturiga aylantirish</a>
+    <legend class="quiz-q"><span class="qn">139</span>7 kun uchun takrorlanadigan sikl qaysi?</legend>
+    <div class="opts">
+      
+      <label class="opt">
+        <input type="radio" name="q139" value="0" required
+                >
+        <i>A</i><span>for kun in range(1, 7):</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q139" value="1" required
+                >
+        <i>B</i><span>for kun in range(1, 8):</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q139" value="2" required
+                >
+        <i>C</i><span>for kun in range(7, 1):</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q139" value="3" required
+                >
+        <i>D</i><span>for kun in range(0, 8):</span>
+      </label>
+      
+    </div>
+  </fieldset>
+  
+  <fieldset class="qblock " data-h="324b36c3" data-topic="28">
+    <a class="quiz-topic" href="mavzu-28-0.html">28-mavzu: Tuzilgan algoritmni Python dasturiga aylantirish</a>
+    <legend class="quiz-q"><span class="qn">140</span>Ta’mirlash narxi dasturida soat = 0 va mijoz doimiy bo‘lmasa, natija qancha?</legend>
+    <div class="opts">
+      
+      <label class="opt">
+        <input type="radio" name="q140" value="0" required
+                >
+        <i>A</i><span>0</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q140" value="1" required
+                >
+        <i>B</i><span>40000</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q140" value="2" required
+                >
+        <i>C</i><span>50000</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q140" value="3" required
+                >
+        <i>D</i><span>Xato xabari</span>
+      </label>
+      
+    </div>
+  </fieldset>
+  
+  <fieldset class="qblock " data-h="4a8085bc" data-topic="29">
+    <a class="quiz-topic" href="mavzu-29-0.html">29-mavzu: Dastur natijasini chiqarish va to‘g‘riligini tekshirish</a>
+    <legend class="quiz-q"><span class="qn">141</span>print(f&quot;{3.14159:.2f}&quot;) buyrug‘i nima chiqaradi?</legend>
+    <div class="opts">
+      
+      <label class="opt">
+        <input type="radio" name="q141" value="0" required
+                >
+        <i>A</i><span>3.1</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q141" value="1" required
+                >
+        <i>B</i><span>3.14159</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q141" value="2" required
+                >
+        <i>C</i><span>3.14</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q141" value="3" required
+                >
+        <i>D</i><span>3</span>
+      </label>
+      
+    </div>
+  </fieldset>
+  
+  <fieldset class="qblock " data-h="895c7bb3" data-topic="29">
+    <a class="quiz-topic" href="mavzu-29-0.html">29-mavzu: Dastur natijasini chiqarish va to‘g‘riligini tekshirish</a>
+    <legend class="quiz-q"><span class="qn">142</span>print(0.1 + 0.2 == 0.3) buyrug‘i natijasi qanday?</legend>
+    <div class="opts">
+      
+      <label class="opt">
+        <input type="radio" name="q142" value="0" required
+                >
+        <i>A</i><span>False</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q142" value="1" required
+                >
+        <i>B</i><span>True</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q142" value="2" required
+                >
+        <i>C</i><span>0.3</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q142" value="3" required
+                >
+        <i>D</i><span>SyntaxError</span>
+      </label>
+      
+    </div>
+  </fieldset>
+  
+  <fieldset class="qblock " data-h="b3e2a1a7" data-topic="29">
+    <a class="quiz-topic" href="mavzu-29-0.html">29-mavzu: Dastur natijasini chiqarish va to‘g‘riligini tekshirish</a>
+    <legend class="quiz-q"><span class="qn">143</span>Elektr to‘lovi dasturida (100 kVt·soatgacha bitta tarif) chegaraviy qiymatlar juftligi qaysi?</legend>
+    <div class="opts">
+      
+      <label class="opt">
+        <input type="radio" name="q143" value="0" required
+                >
+        <i>A</i><span>50 va 250</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q143" value="1" required
+                >
+        <i>B</i><span>100 va 101</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q143" value="2" required
+                >
+        <i>C</i><span>10 va 20</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q143" value="3" required
+                >
+        <i>D</i><span>500 va 1000</span>
+      </label>
+      
+    </div>
+  </fieldset>
+  
+  <fieldset class="qblock " data-h="ecbe8e2c" data-topic="29">
+    <a class="quiz-topic" href="mavzu-29-0.html">29-mavzu: Dastur natijasini chiqarish va to‘g‘riligini tekshirish</a>
+    <legend class="quiz-q"><span class="qn">144</span>Natijani tekshirishda kutilgan javob qachon hisoblanadi?</legend>
+    <div class="opts">
+      
+      <label class="opt">
+        <input type="radio" name="q144" value="0" required
+                >
+        <i>A</i><span>Dastur natijasini ko‘rgandan keyin</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q144" value="1" required
+                >
+        <i>B</i><span>Hech qachon, dastur o‘zi to‘g‘ri hisoblaydi</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q144" value="2" required
+                >
+        <i>C</i><span>Faqat xato chiqqanda</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q144" value="3" required
+                >
+        <i>D</i><span>Dasturni ishga tushirishdan oldin, qo‘lda</span>
+      </label>
+      
+    </div>
+  </fieldset>
+  
+  <fieldset class="qblock " data-h="07311338" data-topic="29">
+    <a class="quiz-topic" href="mavzu-29-0.html">29-mavzu: Dastur natijasini chiqarish va to‘g‘riligini tekshirish</a>
+    <legend class="quiz-q"><span class="qn">145</span>print(f&quot;{1250000:,}&quot;) buyrug‘i nima chiqaradi?</legend>
+    <div class="opts">
+      
+      <label class="opt">
+        <input type="radio" name="q145" value="0" required
+                >
+        <i>A</i><span>1250000</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q145" value="1" required
+                >
+        <i>B</i><span>1 250 000</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q145" value="2" required
+                >
+        <i>C</i><span>1,250,000</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q145" value="3" required
+                >
+        <i>D</i><span>1.250.000</span>
+      </label>
+      
+    </div>
+  </fieldset>
+  
+  <fieldset class="qblock " data-h="43cfd31c" data-topic="30">
+    <a class="quiz-topic" href="mavzu-30-0.html">30-mavzu: Oddiy masalani mustaqil dasturlash va yechimini himoya qilish</a>
+    <legend class="quiz-q"><span class="qn">146</span>Kassa dasturida 1000000 so‘mlik bitta mahsulot kiritilsa, to‘lov qancha bo‘ladi?</legend>
+    <div class="opts">
+      
+      <label class="opt">
+        <input type="radio" name="q146" value="0" required
+                >
+        <i>A</i><span>1 000 000 so‘m</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q146" value="1" required
+                >
+        <i>B</i><span>950 000 so‘m</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q146" value="2" required
+                >
+        <i>C</i><span>995 000 so‘m</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q146" value="3" required
+                >
+        <i>D</i><span>900 000 so‘m</span>
+      </label>
+      
+    </div>
+  </fieldset>
+  
+  <fieldset class="qblock " data-h="d02df0e6" data-topic="30">
+    <a class="quiz-topic" href="mavzu-30-0.html">30-mavzu: Oddiy masalani mustaqil dasturlash va yechimini himoya qilish</a>
+    <legend class="quiz-q"><span class="qn">147</span>while siklida joriy qadamni tashlab, keyingi takrorlanishga o‘tuvchi operator qaysi?</legend>
+    <div class="opts">
+      
+      <label class="opt">
+        <input type="radio" name="q147" value="0" required
+                >
+        <i>A</i><span>break</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q147" value="1" required
+                >
+        <i>B</i><span>pass</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q147" value="2" required
+                >
+        <i>C</i><span>continue</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q147" value="3" required
+                >
+        <i>D</i><span>else</span>
+      </label>
+      
+    </div>
+  </fieldset>
+  
+  <fieldset class="qblock " data-h="5c4f5ec1" data-topic="30">
+    <a class="quiz-topic" href="mavzu-30-0.html">30-mavzu: Oddiy masalani mustaqil dasturlash va yechimini himoya qilish</a>
+    <legend class="quiz-q"><span class="qn">148</span>Mustaqil loyihaning to‘g‘ri bosqichlar ketma-ketligi qaysi?</legend>
+    <div class="opts">
+      
+      <label class="opt">
+        <input type="radio" name="q148" value="0" required
+                >
+        <i>A</i><span>Tahlil, algoritm, dastur, test, himoya</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q148" value="1" required
+                >
+        <i>B</i><span>Dastur, tahlil, himoya, test, algoritm</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q148" value="2" required
+                >
+        <i>C</i><span>Test, dastur, algoritm, tahlil, himoya</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q148" value="3" required
+                >
+        <i>D</i><span>Himoya, dastur, test, tahlil, algoritm</span>
+      </label>
+      
+    </div>
+  </fieldset>
+  
+  <fieldset class="qblock " data-h="74c1e0a7" data-topic="30">
+    <a class="quiz-topic" href="mavzu-30-0.html">30-mavzu: Oddiy masalani mustaqil dasturlash va yechimini himoya qilish</a>
+    <legend class="quiz-q"><span class="qn">149</span>Kassa dasturida qaysi kiritish chegaraviy test hisoblanadi?</legend>
+    <div class="opts">
+      
+      <label class="opt">
+        <input type="radio" name="q149" value="0" required
+                >
+        <i>A</i><span>450000</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q149" value="1" required
+                >
+        <i>B</i><span>200000</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q149" value="2" required
+                >
+        <i>C</i><span>350000</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q149" value="3" required
+                >
+        <i>D</i><span>999999</span>
+      </label>
+      
+    </div>
+  </fieldset>
+  
+  <fieldset class="qblock " data-h="231d0dee" data-topic="30">
+    <a class="quiz-topic" href="mavzu-30-0.html">30-mavzu: Oddiy masalani mustaqil dasturlash va yechimini himoya qilish</a>
+    <legend class="quiz-q"><span class="qn">150</span>Himoyada dastur qismlarini tushuntirishda eng muhimi nima?</legend>
+    <div class="opts">
+      
+      <label class="opt">
+        <input type="radio" name="q150" value="0" required
+                >
+        <i>A</i><span>Kodni tez o‘qib berish</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q150" value="1" required
+                >
+        <i>B</i><span>Faqat natijani ko‘rsatish</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q150" value="2" required
+                >
+        <i>C</i><span>Har bir operator nima uchun tanlanganini asoslash</span>
+      </label>
+      
+      <label class="opt">
+        <input type="radio" name="q150" value="3" required
+                >
+        <i>D</i><span>Kod satrlari sonini aytish</span>
+      </label>
+      
+    </div>
+  </fieldset>
+  
+
+  
+  <div class="quiz-foot"><span class="muted">Barcha savollarga javob bering</span>
+    <button class="btn primary" type="submit"><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg> Javoblarni tekshirish</button></div>
+  
+</form>
+
+    
+  </div>
+  <footer class="foot">
+  
+  <div><b>UKM.6. Elementar dasturlash</b> · 30610403 Kompyuter tarmoqlari va IT-servis</div>
+  <div>Tayyorladi: <b>Oydin Tashtemirova</b> · Piskent tuman 1-son texnikumi · 2026</div>
+  
+</footer>
+
+</section>
+
+  </main>
+
+  
+  <a class="back-btn" href="index.html" title="Orqaga (Backspace)" data-back><svg class="ic" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5"/><path d="m11 6-6 6 6 6"/></svg><span>Orqaga</span></a>
+
+  
+  
+
+  
+  
+
+  
+  <!-- Barcha mavzular oynasi (#jumper) -->
+  <div class="jumper" id="jumper">
+    <a class="overlay-close" href="#yopish" aria-label="Yopish"></a>
+    <div class="jumper-panel">
+      <form class="jumper-head" action="mavzular.html" method="get">
+        <svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+        <input name="q" type="text" placeholder="Mavzu nomi yoki raqamini yozing va Enter bosing…" autocomplete="off">
+        <a href="#yopish"><kbd>Yopish</kbd></a>
+      </form>
+      <div class="jumper-grid">
+        <a class="jg" href="mavzu-1-0.html" style="--g:#C2562D" title="Dasturlash va algoritm tushunchalari">1</a><a class="jg" href="mavzu-2-0.html" style="--g:#C2562D" title="Oddiy masalalar uchun algoritm tuzish asoslari">2</a><a class="jg" href="mavzu-3-0.html" style="--g:#C2562D" title="Algoritm bosqichlarini mantiqiy ketma-ketlikda ifodalash">3</a><a class="jg" href="mavzu-4-0.html" style="--g:#0E7C7B" title="Python dasturlash tili va uning sintaksisi">4</a><a class="jg" href="mavzu-5-0.html" style="--g:#0E7C7B" title="Python dasturlash muhiti va oddiy kodlar">5</a><a class="jg" href="mavzu-6-0.html" style="--g:#0E7C7B" title="O‘zgaruvchilar va ma’lumot turlari">6</a><a class="jg" href="mavzu-7-0.html" style="--g:#0E7C7B" title="O‘zgaruvchilar yaratish va ma’lumot turlari">7</a><a class="jg" href="mavzu-8-0.html" style="--g:#9E2A3A" title="Kiritish va chiqarish operatorlari">8</a><a class="jg" href="mavzu-9-0.html" style="--g:#9E2A3A" title="input() va print() operatorlari bilan ishlash">9</a><a class="jg" href="mavzu-10-0.html" style="--g:#9E2A3A" title="Arifmetik va mantiqiy operatorlar">10</a><a class="jg" href="mavzu-11-0.html" style="--g:#9E2A3A" title="Arifmetik operatorlar yordamida hisoblash dasturlarini tuzish">11</a><a class="jg" href="mavzu-12-0.html" style="--g:#9E2A3A" title="Mantiqiy operatorlardan foydalanish">12</a><a class="jg" href="mavzu-13-0.html" style="--g:#24508F" title="Shart operatorlari va ulardan foydalanish">13</a><a class="jg" href="mavzu-14-0.html" style="--g:#24508F" title="if shart operatori yordamida dastur tuzish">14</a><a class="jg" href="mavzu-15-0.html" style="--g:#24508F" title="if-else va if-elif-else konstruksiyalaridan foydalanish">15</a><a class="jg" href="mavzu-16-0.html" style="--g:#24508F" title="Takrorlash operatorlari: for va while">16</a><a class="jg" href="mavzu-17-0.html" style="--g:#24508F" title="for takrorlash operatori bilan ishlash">17</a><a class="jg" href="mavzu-18-0.html" style="--g:#24508F" title="While takrorlash operatori bilan ishlash">18</a><a class="jg" href="mavzu-19-0.html" style="--g:#24508F" title="Operatorlarni birgalikda qo‘llash va dastur tuzish">19</a><a class="jg" href="mavzu-20-0.html" style="--g:#24508F" title="Shart va takrorlash operatorlarini birgalikda qo‘llash">20</a><a class="jg" href="mavzu-21-0.html" style="--g:#24508F" title="Operatorlar yordamida oddiy hisoblash masalalarini yechish">21</a><a class="jg" href="mavzu-22-0.html" style="--g:#B07D1E" title="Dasturlashdagi sintaktik va mantiqiy xatolar">22</a><a class="jg" href="mavzu-23-0.html" style="--g:#B07D1E" title="Sintaktik xatolarni aniqlash va tuzatish">23</a><a class="jg" href="mavzu-24-0.html" style="--g:#B07D1E" title="Mantiqiy xatolarni topish va tahlil qilish">24</a><a class="jg" href="mavzu-25-0.html" style="--g:#B07D1E" title="Dasturlardagi mantiqiy xatolar">25</a><a class="jg" href="mavzu-26-0.html" style="--g:#B07D1E" title="Xatolarni tuzatish va dastur ishlashini tekshirish">26</a><a class="jg" href="mavzu-27-0.html" style="--g:#3F7D4E" title="Masalaga mos algoritm tuzish va blok-sxema ishlab chiqish">27</a><a class="jg" href="mavzu-28-0.html" style="--g:#3F7D4E" title="Tuzilgan algoritmni Python dasturiga aylantirish">28</a><a class="jg" href="mavzu-29-0.html" style="--g:#3F7D4E" title="Dastur natijasini chiqarish va to‘g‘riligini tekshirish">29</a><a class="jg" href="mavzu-30-0.html" style="--g:#3F7D4E" title="Oddiy masalani mustaqil dasturlash va yechimini himoya qilish">30</a>
+      </div>
+      <div class="jumper-list">
+        <a class="jl" href="mavzu-1-0.html"><b style="--g:#C2562D">01</b><span>Dasturlash va algoritm tushunchalari<small>Nazariy · Algoritmlash asoslari</small></span><svg class="ic" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg></a><a class="jl" href="mavzu-2-0.html"><b style="--g:#C2562D">02</b><span>Oddiy masalalar uchun algoritm tuzish asoslari<small>Nazariy · Algoritmlash asoslari</small></span><svg class="ic" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg></a><a class="jl" href="mavzu-3-0.html"><b style="--g:#C2562D">03</b><span>Algoritm bosqichlarini mantiqiy ketma-ketlikda ifodalash<small>Nazariy · Algoritmlash asoslari</small></span><svg class="ic" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg></a><a class="jl" href="mavzu-4-0.html"><b style="--g:#0E7C7B">04</b><span>Python dasturlash tili va uning sintaksisi<small>Nazariy · Python tili va o‘zgaruvchilar</small></span><svg class="ic" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg></a><a class="jl" href="mavzu-5-0.html"><b style="--g:#0E7C7B">05</b><span>Python dasturlash muhiti va oddiy kodlar<small>Nazariy · Python tili va o‘zgaruvchilar</small></span><svg class="ic" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg></a><a class="jl" href="mavzu-6-0.html"><b style="--g:#0E7C7B">06</b><span>O‘zgaruvchilar va ma’lumot turlari<small>Nazariy · Python tili va o‘zgaruvchilar</small></span><svg class="ic" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg></a><a class="jl" href="mavzu-7-0.html"><b style="--g:#0E7C7B">07</b><span>O‘zgaruvchilar yaratish va ma’lumot turlari<small>Nazariy · Python tili va o‘zgaruvchilar</small></span><svg class="ic" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg></a><a class="jl" href="mavzu-8-0.html"><b style="--g:#9E2A3A">08</b><span>Kiritish va chiqarish operatorlari<small>Nazariy · Kiritish-chiqarish va operatorlar</small></span><svg class="ic" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg></a><a class="jl" href="mavzu-9-0.html"><b style="--g:#9E2A3A">09</b><span>input() va print() operatorlari bilan ishlash<small>Amaliy · Kiritish-chiqarish va operatorlar</small></span><svg class="ic" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg></a><a class="jl" href="mavzu-10-0.html"><b style="--g:#9E2A3A">10</b><span>Arifmetik va mantiqiy operatorlar<small>Nazariy · Kiritish-chiqarish va operatorlar</small></span><svg class="ic" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg></a><a class="jl" href="mavzu-11-0.html"><b style="--g:#9E2A3A">11</b><span>Arifmetik operatorlar yordamida hisoblash dasturlarini tuzish<small>Nazariy · Kiritish-chiqarish va operatorlar</small></span><svg class="ic" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg></a><a class="jl" href="mavzu-12-0.html"><b style="--g:#9E2A3A">12</b><span>Mantiqiy operatorlardan foydalanish<small>Amaliy · Kiritish-chiqarish va operatorlar</small></span><svg class="ic" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg></a><a class="jl" href="mavzu-13-0.html"><b style="--g:#24508F">13</b><span>Shart operatorlari va ulardan foydalanish<small>Nazariy · Shart va takrorlash operatorlari</small></span><svg class="ic" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg></a><a class="jl" href="mavzu-14-0.html"><b style="--g:#24508F">14</b><span>if shart operatori yordamida dastur tuzish<small>Amaliy · Shart va takrorlash operatorlari</small></span><svg class="ic" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg></a><a class="jl" href="mavzu-15-0.html"><b style="--g:#24508F">15</b><span>if-else va if-elif-else konstruksiyalaridan foydalanish<small>Amaliy · Shart va takrorlash operatorlari</small></span><svg class="ic" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg></a><a class="jl" href="mavzu-16-0.html"><b style="--g:#24508F">16</b><span>Takrorlash operatorlari: for va while<small>Amaliy · Shart va takrorlash operatorlari</small></span><svg class="ic" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg></a><a class="jl" href="mavzu-17-0.html"><b style="--g:#24508F">17</b><span>for takrorlash operatori bilan ishlash<small>Amaliy · Shart va takrorlash operatorlari</small></span><svg class="ic" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg></a><a class="jl" href="mavzu-18-0.html"><b style="--g:#24508F">18</b><span>While takrorlash operatori bilan ishlash<small>Amaliy · Shart va takrorlash operatorlari</small></span><svg class="ic" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg></a><a class="jl" href="mavzu-19-0.html"><b style="--g:#24508F">19</b><span>Operatorlarni birgalikda qo‘llash va dastur tuzish<small>Amaliy · Shart va takrorlash operatorlari</small></span><svg class="ic" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg></a><a class="jl" href="mavzu-20-0.html"><b style="--g:#24508F">20</b><span>Shart va takrorlash operatorlarini birgalikda qo‘llash<small>Amaliy · Shart va takrorlash operatorlari</small></span><svg class="ic" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg></a><a class="jl" href="mavzu-21-0.html"><b style="--g:#24508F">21</b><span>Operatorlar yordamida oddiy hisoblash masalalarini yechish<small>Nazariy · Shart va takrorlash operatorlari</small></span><svg class="ic" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg></a><a class="jl" href="mavzu-22-0.html"><b style="--g:#B07D1E">22</b><span>Dasturlashdagi sintaktik va mantiqiy xatolar<small>Amaliy · Xatolarni aniqlash va tuzatish</small></span><svg class="ic" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg></a><a class="jl" href="mavzu-23-0.html"><b style="--g:#B07D1E">23</b><span>Sintaktik xatolarni aniqlash va tuzatish<small>Amaliy · Xatolarni aniqlash va tuzatish</small></span><svg class="ic" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg></a><a class="jl" href="mavzu-24-0.html"><b style="--g:#B07D1E">24</b><span>Mantiqiy xatolarni topish va tahlil qilish<small>Amaliy · Xatolarni aniqlash va tuzatish</small></span><svg class="ic" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg></a><a class="jl" href="mavzu-25-0.html"><b style="--g:#B07D1E">25</b><span>Dasturlardagi mantiqiy xatolar<small>Amaliy · Xatolarni aniqlash va tuzatish</small></span><svg class="ic" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg></a><a class="jl" href="mavzu-26-0.html"><b style="--g:#B07D1E">26</b><span>Xatolarni tuzatish va dastur ishlashini tekshirish<small>Amaliy · Xatolarni aniqlash va tuzatish</small></span><svg class="ic" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg></a><a class="jl" href="mavzu-27-0.html"><b style="--g:#3F7D4E">27</b><span>Masalaga mos algoritm tuzish va blok-sxema ishlab chiqish<small>Amaliy · Algoritmdan tayyor dasturgacha</small></span><svg class="ic" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg></a><a class="jl" href="mavzu-28-0.html"><b style="--g:#3F7D4E">28</b><span>Tuzilgan algoritmni Python dasturiga aylantirish<small>Amaliy · Algoritmdan tayyor dasturgacha</small></span><svg class="ic" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg></a><a class="jl" href="mavzu-29-0.html"><b style="--g:#3F7D4E">29</b><span>Dastur natijasini chiqarish va to‘g‘riligini tekshirish<small>Amaliy · Algoritmdan tayyor dasturgacha</small></span><svg class="ic" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg></a><a class="jl" href="mavzu-30-0.html"><b style="--g:#3F7D4E">30</b><span>Oddiy masalani mustaqil dasturlash va yechimini himoya qilish<small>Amaliy · Algoritmdan tayyor dasturgacha</small></span><svg class="ic" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg></a>
+      </div>
+    </div>
+  </div>
+  
+
+  
+  <script src="static/lectures/js/ui.js" defer></script>
+  <script src="static/lectures/js/offline.js" defer></script>
+</body>
+</html>
