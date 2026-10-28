@@ -11,10 +11,10 @@ from django.core.files.uploadedfile import SimpleUploadedFile
 from django.test import TestCase, override_settings
 
 from .content import slide_list
-from .docx_parser import parse
+from .docx_parser import clean, parse
 from .editing import html_to_text, text_to_html, text_to_table
 from . import fan
-from .importer import seed_course
+from .importer import TERM_LI_RX, _cap, seed_course
 from .models import Course, QuickQA, Section, TestQuestion, Topic
 
 TMP_MEDIA = tempfile.mkdtemp()
@@ -65,6 +65,17 @@ class ParserTests(BaseCase):
         self.assertEqual(len(d['topics']), LAST)
         self.assertGreater(d['course']['hours_theory'], 0)
         self.assertEqual(d['problems'], [])
+
+    def test_code_and_glossary_text(self):
+        # docx dagi Courier New kod: chekinish va ichki bo'shliqlar saqlanadi
+        self.assertEqual(clean('<code>&nbsp;&nbsp;print(x)  # izoh</code>'), '<code>&nbsp;&nbsp;print(x)  # izoh</code>')
+        self.assertEqual(clean('masalan , .exe  fayl'), 'masalan, .exe fayl')
+        # ta'rif boshidagi «—» olib tashlanadi, kod so'zlari bosh harfga o'tmaydi
+        self.assertEqual(_cap('— dastur matni'), 'Dastur matni')
+        for s in ['input() natijasi', 'range(1, n) da', 'and va or', 'x² yozuvi']:
+            self.assertEqual(_cap(s), s)
+        self.assertIsNone(TERM_LI_RX.match('<b>if</b> bloki va else orasida'))  # ajratuvchisiz gap — atama emas
+        self.assertEqual(TERM_LI_RX.match('<b>Iteratsiya</b> — sikl tanasining bajarilishi').group(1), 'Iteratsiya')
 
     def test_generic_headings(self):
         d = parse(make_docx([('', 'Fizika'), ('Heading1', 'Mexanika'), ('Heading2', 'Harakat'), ('', 'Tezlik — yo‘l/vaqt.'),

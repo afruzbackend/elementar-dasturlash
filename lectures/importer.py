@@ -1,5 +1,7 @@
 """docx -> bazadagi darslik. Buyruq (import_docx) va Studiya ikkalasi ham shuni ishlatadi."""
+import builtins
 import html
+import keyword
 import re
 from pathlib import Path
 
@@ -67,6 +69,8 @@ def create_course(data, *, title=None, author=None, author_photo=None, replace=N
         course = replace
         course.topics.all().delete()
         course.parts.all().delete()
+        # glossariy matndan qayta yig'iladi; eskisi qolsa, yangi (tuzatilgan) ta'riflar unga qo'shilmay qoladi
+        course.glossary.all().delete()
         for k, v in fields.items():
             setattr(course, k, v)
         course.save()
@@ -124,13 +128,29 @@ def set_course_images(course):
 
 # ------------------------------------------------------------------ glossariy va tezkor savol-javob
 TERM_P_RX = re.compile(r'^(?:<b>)?([A-ZА-ЯЎҚҒҲ][^<>—:.()«»]{1,48}?)(?:</b>)?\s*(\([^)]{1,50}\))?\s+—\s+(.+)$', re.S)
-TERM_LI_RX = re.compile(r'^<b>([^<>:]{2,40}?):?</b>:?\s*(.+)$', re.S)
+# «**Atama:** izoh» yoki «**Atama** — izoh». Ajratuvchisiz «**if** bloki ...» — oddiy gap, atama emas.
+TERM_LI_RX = re.compile(r'^<b>([^<>:]{2,40}?)(?::</b>|</b>\s*[:—–])\s*(.+)$', re.S)
 STOP_START = ('shunday', 'bir ', 'oldingi', 'barcha', 'bu ', 'ushbu', 'har ', 'agar', 'masalan', 'endi', 'avval',
-              'keyin', 'asosiy qurilmalarni', 'ekrandagi', 'tashqi dunyo')
+              'keyin', 'asosiy qurilmalarni', 'ekrandagi', 'tashqi dunyo', 'diqqat', 'eng ', 'birinchi', 'ikkita',
+              'ko‘p uchraydigan')
+# gap boshidagi dastur kodi so'zlari (input(), range, and) bosh harfga o'zgartirilmaydi
+CODE_WORDS = set(keyword.kwlist) | set(dir(builtins))
 
 
 def _plain(text):
     return html.unescape(re.sub(r'<[^>]+>', '', text or '')).strip()
+
+
+def _cap(text):
+    """Gapni bosh harf bilan boshlash: «— izoh» -> «Izoh», lekin «input() natijasi» o'zgarmaydi."""
+    text = text.lstrip('—–:; ').strip()
+    m = re.match(r'[A-Za-z_][A-Za-z0-9_]*', text)
+    # «x² yozuvi», «n xonagacha» — bir harfli o'zgaruvchi nomi ham kod (o'zbekcha «u» olmoshidan tashqari)
+    after = text[m.end():m.end() + 1] if m else ''
+    single_var = m and len(m.group()) == 1 and m.group() != 'u' and after and after in ' ²³'
+    if m and (m.group() in CODE_WORDS or (after and after in '(.[') or single_var):
+        return text
+    return text[:1].upper() + text[1:]
 
 
 def _first_sentence(text, lo=30, hi=320):
@@ -142,7 +162,7 @@ def _first_sentence(text, lo=30, hi=320):
 
 def _term_ok(term):
     words = term.split()
-    return (1 <= len(words) <= 4 and not any(ch.isdigit() for ch in term)
+    return (1 <= len(words) <= 4 and not any(ch.isdigit() or ch in '→=' for ch in term)
             and not term.lower().startswith(STOP_START) and len(term) >= 2)
 
 
@@ -167,7 +187,7 @@ def extract_terms(course):
                     definition = _first_sentence(_plain(definition))
                     if not _term_ok(key) or len(definition) < 20:
                         continue
-                    found.setdefault(key.lower(), (term, definition[:1].upper() + definition[1:], t))
+                    found.setdefault(key.lower(), (term, _cap(definition), t))
     return list(found.values())
 
 
@@ -218,13 +238,13 @@ def qa_from_content(course, topics=None, per_topic=QA_PER_TOPIC):
         seen, order = set(), 0
         for q, a in _qa_candidates(t, t.terms.all()):
             key = q.lower()
-            a = (a or '').strip()
+            a = (a or '').strip().lstrip('—–:; ')
             # sifatsiz juftliklar: javob belgidan boshlansa («→», «(»), juda qisqa bo'lsa,
             # savol tugmalar birikmasi («Ctrl + Alt») yoki qadam raqami («2-qadam») bo'lsa
             if (key in seen or len(a) < 25 or not a[:1].isalpha() or key in test_texts
                     or '+' in q or re.search(r'«\d', q)):
                 continue
-            a = a[:1].upper() + a[1:]
+            a = _cap(a)
             seen.add(key)
             order += 1
             new.append(QuickQA(topic=t, order=order, question=q, answer=a))

@@ -64,7 +64,7 @@
             
             <div class="key rv" style="--d:0.28s" data-tilt><i>02</i><b>Kasr chiziq</b><p>(a + b) / 2 kabi surat va maxrajni qavsga olish shart; a + b / 2 boshqa natija beradi.</p></div>
             
-            <div class="key rv" style="--d:0.35s" data-tilt><i>03</i><b>Daraja</b><p>x² yozuvi x <b> 2, kvadrat ildiz esa math.sqrt(x) yoki x </b> 0.5 ko‘rinishida yoziladi.</p></div>
+            <div class="key rv" style="--d:0.35s" data-tilt><i>03</i><b>Daraja</b><p>x² yozuvi x ** 2, kvadrat ildiz esa math.sqrt(x) yoki x ** 0.5 ko‘rinishida yoziladi.</p></div>
             
             <div class="key rv" style="--d:0.42s" data-tilt><i>04</i><b>Tushunarli nomlar</b><p>o‘zgaruvchilarga a, b emas, imkon qadar narx, soni, tezlik kabi nomlar bering.</p></div>
             
@@ -149,7 +149,7 @@
       <h4 id="more-0">Hisoblash dasturining tuzilishi</h4>
 <p>Ko‘pchilik hisoblash masalalari <b>chiziqli algoritm</b> bilan yechiladi: buyruqlar yuqoridan pastga bir marta bajariladi. Bunday dastur uch qismdan iborat: boshlang‘ich ma’lumotlarni kiritish, formula bo‘yicha hisoblash va natijani chiqarish. Dasturni yozishdan oldin masalaning matematik modelini — ya’ni formulasini aniqlab olish kerak.</p>
 <h4 id="more-2">Formulani ifodaga o‘girish qoidalari</h4>
-<ul><li><b>Ko‘paytirish belgisi</b> — matematikadagi 2a yozuvi Pythonda albatta 2 * a ko‘rinishida yoziladi.</li><li><b>Kasr chiziq</b> — (a + b) / 2 kabi surat va maxrajni qavsga olish shart; a + b / 2 boshqa natija beradi.</li><li><b>Daraja</b> — x² yozuvi x <b> 2, kvadrat ildiz esa math.sqrt(x) yoki x </b> 0.5 ko‘rinishida yoziladi.</li><li><b>Tushunarli nomlar</b> — o‘zgaruvchilarga a, b emas, imkon qadar narx, soni, tezlik kabi nomlar bering.</li></ul>
+<ul><li><b>Ko‘paytirish belgisi</b> — matematikadagi 2a yozuvi Pythonda albatta 2 * a ko‘rinishida yoziladi.</li><li><b>Kasr chiziq</b> — (a + b) / 2 kabi surat va maxrajni qavsga olish shart; a + b / 2 boshqa natija beradi.</li><li><b>Daraja</b> — x² yozuvi x ** 2, kvadrat ildiz esa math.sqrt(x) yoki x ** 0.5 ko‘rinishida yoziladi.</li><li><b>Tushunarli nomlar</b> — o‘zgaruvchilarga a, b emas, imkon qadar narx, soni, tezlik kabi nomlar bering.</li></ul>
 <div class="tbl-wrap "><table>
   <thead><tr><th>Kod</th><th>Natija / izoh</th></tr></thead>
   <tbody><tr><td><code>narx = 250000</code></td><td>Xizmat narxi, so‘m</td></tr><tr><td><code>chegirma = 15</code></td><td>Chegirma foizi</td></tr><tr><td><code>tolov = narx * (100 - chegirma) // 100</code></td><td>Chegirmadan keyingi summa</td></tr><tr><td><code>print(f&quot;To‘lov: {tolov} so‘m&quot;)</code></td><td>To‘lov: 212500 so‘m</td></tr></tbody>

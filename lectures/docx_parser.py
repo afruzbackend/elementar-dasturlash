@@ -113,14 +113,19 @@ def read_blocks(path):
 # ---------------------------------------------------------------- matnni tozalash
 FIXES = [
     (re.compile(r"[ \u00a0]{2,}"), " "),
-    (re.compile(r" ([,.;:!?])(?!\d)"), r"\1"),
+    # «so‘z ,» -> «so‘z,» — lekin «masalan, .exe» va «0 .5» ga tegilmaydi
+    (re.compile(r" ([,.;:!?])(?!\w)"), r"\1"),
 ]
+CODE_RX = re.compile(r"(<code>.*?</code>)", re.S)
 
 
 def clean(s):
-    for rx, rep in FIXES:
-        s = rx.sub(rep, s)
-    return s.strip()
+    """Ortiqcha bo'shliqlarni tozalash; dastur kodi (<code>) o'z holicha qoladi."""
+    parts = CODE_RX.split(s)
+    for i in range(0, len(parts), 2):
+        for rx, rep in FIXES:
+            parts[i] = rx.sub(rep, parts[i])
+    return "".join(parts).strip()
 
 
 def clean_rows(rows):
